@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta class="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>William Jin | Design Everything</title>
+    <!-- Don't forget to add your metadata here -->
+    <link rel='stylesheet' href='css/style.min.css' />
+    <style>
+        .shadow{
+
+            transition: all .2s;
+        }
+        .shadow:hover{
+            -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+            -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+            box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+        }
+        .overlay{
+            position: absolute;
+
+            width: auto;
+
+
+            background-color: rgba(255, 255, 255, .95);
+            opacity: 0;
+            -webkit-transition: .3s all;
+            -o-transition: .3s all;
+            transition: .3s all
+        }
+        .overlay:hover{
+            opacity: 1;
+        }
+        .step{
+            width: 33%;
+
+        }
+        /*.step:hover{
+            -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+            -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+            box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+        }*/
+        .hero{
+            background-image: url(images/evie_default_bg.jpeg);
+        }
+        .navbar__logo{
+            color: #303030;
+
+        }
+        .navbar{
+            background-color: #fff;
+        }
+        .navbar__menu {
+            -webkit-text-fill-color: #303030;
+
+
+        }
+        .navbar__inner{
+            color: #303030
+        }
+        .navbar__menu a {
+            color: #303030
+        }
+        .navbar__menu a:after {
+            display: block;
+            content: "";
+            border-bottom: 2px solid #707070;
+            -webkit-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: -webkit-transform .25s ease-in-out;
+            transition: -webkit-transform .25s ease-in-out;
+            transition: transform .25s ease-in-out;
+            transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out
+        }
+        .expanded__content{
+            width: 60%;
+        }
+
+        .landing__section:nth-child(odd) {
+            background-color: #f7f7f7;
+            border-top: 0px solid #eee;
+            border-bottom: 0px solid #eee
+
+        }
+        .landing__section{
+            background-color: #f7f7f7;
+        }
+
+
+
+    </style>
+</head>
+<body style="font-family: sans-serif">
+
+<div class="navbar navbar--extended">
+    <nav class="nav__mobile"></nav>
+    <div class="container">
+        <div class="navbar__inner">
+            <a href="index.html" class="navbar__logo" style="color: #303030">William</a>
+            <nav class="navbar__menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+        </div>
+    </div>
+</div>
+<div style="background-color: #6c63ff; height: 70px"></div>
+<div class="expanded landing__section" style="background-color: #fff">
+    <div class="container">
+        <div class="expanded__inner">
+            <div class="expanded__content">
+                <h1 style="margin-top: 100px; font-size: 50px; font-family: sans-serif; font-weight: lighter; color: #303030"><b>Hi, I'm William.</b> I design (almost) everything.</h1>
+                <p style="font-size: 20px; font-family: sans-serif; font-weight: lighter">I'm passionate about creating great products by combining design, business and technology. You can view my <a href="DesignPhilosophy.html"><b style="text-decoration: underline">design philosophy</b></a>, find me on <a href="https://www.linkedin.com/in/william-jin-405929168/" target="_blank"><b style="text-decoration: underline">Linkedin</b></a>, or
+                    just send me an <a href="mailto:williamjinq@outlook.com"><b style="text-decoration: underline">email</b></a>.</p>
+                <a href="./pdfs/resume.pdf" class="button button__primary">My Resume</a><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hero__sub" style="margin-top: -50px">
+		<span id="scrollToNext" >
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
+		</span>
+</div>
+<!-- Steps -->
+<div class="steps landing__section">
+    <!--<div class="container">
+        <h2>Projects</h2>
+        <p>Here's who we can think of, but surely creative people will surprise us.</p>
+    </div>-->
+    <div class="container">
+        <div class="steps__inner">
+            <div class="step">
+
+                <a href="Uteeth.html">
+                    <div class="step__media">
+
+                        <img src="./images/Uteeth/0.0.jpg" width="90%" class="shadow" >
+                    </div>
+                </a>
+                <h4>Uteeth</h4>
+                <p >Product & UX Design / Independent Work</p>
+            </div>
+            <div class="step">
+                <div class="step__media">
+                    <img src="./images/EZChat/1.jpg" width="90%" class="shadow" >
+                </div>
+                <h4>EZchat</h4>
+                <p >UX Design / Independent Work</p>
+            </div>
+            <div class="step">
+                <a href="Pianooooo.html">
+                <div class="step__media">
+                    <img src="./images/Pianooooo/0.0.jpg" width="90%" class="shadow" >
+                </div>
+                </a>
+                <h4>Pianooooo</h4>
+                <p >Service & UX Design / Independent Work</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="steps landing__section" style="margin-top: -80px">
+
+    <div class="container">
+        <div class="steps__inner">
+            <div class="step">
+
+                <a href="Golfdesk.html">
+                    <div class="step__media">
+
+                        <img src="./images/Golf%20Desk/0.jpg" width="90%" class="shadow" >
+                    </div>
+                </a>
+                <h4>Golf Desk</h4>
+                <p >Product Design / Team Work</p>
+            </div>
+
+            <div class="step">
+                <a href="Carlette.html">
+                <div class="step__media">
+                    <img src="./images/Carlette/0.jpg" width="90%" class="shadow" >
+                </div>
+                </a>
+                <h4>Carlette</h4>
+                <p >Interaction Design / Independent Work</p>
+            </div>
+            <div class="step">
+                <div class="step__media">
+                    <img src="./images/Orca%20Fan/0.jpg" width="90%" class="shadow" >
+                </div>
+                <h4>Orca Fan</h4>
+                <p >Product Structure Design / Independent Work</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer footer--dark">
+    <div class="container">
+        <div class="footer__inner">
+            <a href="index_before.html" class="footer__textLogo">William Jin</a>
+            <div class="footer__data">
+                <div class="footer__data__item">
+                    <div class="footer__row">
+                        Email: williamjinq@outlook.com</div>
+                    <div class="footer__row">
+                    </div>
+                </div>
+                <!--
+                <div class="footer__data__item">
+                    <div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
+                    </div>
+                </div>
+                <div class="footer__data__item">
+                <div class="footer__row">
+                    <a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
+                </div>
+                <div class="footer__row">
+                    <a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
+                </div>
+                <div class="footer__row">
+                    <a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
+                </div>
+                <div class="footer__row">
+                    <a href="./additional.html" class="footer__link">MIT license</a>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</div>
+<script src='js/app.min.js'></script>
+</body>
+</html>
