@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>William Jin | Design Everything</title>
+	<link rel='stylesheet' href='css/style.min.css' />
+	<style>
+		.shadow{
+
+			transition: all .3s;
+		}
+		.shadow:hover{
+			-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+			-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+			box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+		}
+		.overlay{
+			position: absolute;
+
+			width: auto;
+
+
+			background-color: rgba(255, 255, 255, .95);
+			opacity: 0;
+			-webkit-transition: .3s all;
+			-o-transition: .3s all;
+			transition: .3s all
+		}
+		.overlay:hover{
+			opacity: 1;
+		}
+		.step{
+			width: 33%;
+		}
+		.hero{
+			background-image: url(images/evie_default_bg.jpeg);
+		}
+		.navbar__logo{
+			color: #303030;
+
+		}
+		.navbar{
+			background-color: #fff;
+		}
+		.navbar__menu {
+			-webkit-text-fill-color: #303030;
+
+
+		}
+		.navbar__inner{
+			color: #303030
+		}
+		.navbar__menu a {
+			color: #303030
+		}
+		.navbar__menu a:after {
+			display: block;
+			content: "";
+			border-bottom: 2px solid #707070;
+			-webkit-transform: scaleX(0);
+			-ms-transform: scaleX(0);
+			transform: scaleX(0);
+			-webkit-transition: -webkit-transform .25s ease-in-out;
+			transition: -webkit-transform .25s ease-in-out;
+			transition: transform .25s ease-in-out;
+			transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out
+		}
+		.expanded__content{
+			width: 60%;
+		}
+
+		.landing__section:nth-child(odd) {
+			background-color: #f7f7f7;
+			border-top: 0px solid #eee;
+			border-bottom: 0px solid #eee
+
+		}
+		.landing__section{
+			background-color: #f7f7f7;
+		}
+
+
+
+	</style>
+</head>
+<body style="background-color: #f7f7f7; font-family: sans-serif">
+	<!-- navbar -->
+	<div class="navbar">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="index.html" class="navbar__logo">William</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="#">Top</a></li>
+						<li><a href="index.html">Home</a></li>
+
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<div style="background-color: #6c63ff; height: 70px"></div>
+	<!-- Page content -->
+	<div class="app">
+		<div class="container">
+			<div class="app__inner">
+				<div class="app__menu" >
+					<ul class="vMenu">
+						<li><a href="#" class="vMenu--active">Project Brief</a></li>
+						<li><a href="#2" >Background</a></li>
+						<li><a href="#3">User Research</a></li>
+						<li><a href="#4">Product Design</a></li>
+						<li><a href="#5">App Design</a></li>
+					</ul>
+				</div>
+				<div class="app__main">
+					<div class="text-container">
+						<h1 class="app__main__title">Uteeth</h1>
+						<P>Product & UX Design / Independent Work</P>
+						<h3>Project Brief</h3>
+						<p>Uteeth is a smart device that allows users to detect their teeth status at home. The camera on it could capture the image of users' teeth and analyze the picture automatically, with the assistance of an TPU and an Artificial Intelligence microchip. Uteeth is primarily designed to detect users' decay, dental calculus and odontolith. Users could check the feedback and professional advices via a specially designed app. Eventually, users can put Uteeth into the box to recharge.
+							All the detection results will be uploaded after asking for the permission of users, allowing doctors and researchers to analyze. The vision of Uteeth is to build a database of oral health, allowing users to check their teeth, or even to deal with some mild diseases at home.</p>
+						<img src="./images/Uteeth/0.0.jpg" >
+						<h3>Design Process</h3>
+						<img src="images/Uteeth/1.jpg" style="opacity: .9" id="2">
+						<h3>Background - Expensive Teeth</h3>
+						<P>As is said by a doctor from the PLAZA dental hospital, the price of dental implant is around 3,500 dollars on average. Moreover, merely a teeth check may cost more than 1,000 dollars.
+							Dentistry is always regarded as the most extravagant medical consumption field, which is the last 10% consumption in health. In the world range, oral health consumption takes up about 6% in the whole health expenditure generally. The figure turns to 0.5% in Mongolia, and to 8% in America.
+							Apart from the expensive price, patients have to make an appointment in advance, and wait for even several months before they could eventually see the doctor.
+						</P>
+						<img src="images/Uteeth/2.png" style="width: 60%; margin-left: 20%">
+						<img src="images/Uteeth/3.jpg" style="width: 60%; margin-left: 20%">
+						<h3>PEST Analysis</h3>
+						<P>I did a brainstorm and the PEST analysis on oral health.</P>
+						<img src="images/Uteeth/4.jpg">
+
+						<h3>Field Study: A Trip to the Hospital</h3>
+						<P>To further research(and to pull my wisdom teeth), I went to the dentist in China myself. Normally, a hospital charges about 500 RMB for pulling a wisdom tooth. However, to make an appointment, patients have to get up at dawn and queue up in the cold wind to register, including some of the old. They have to still wait for about two hours after entering into the building.
+
+							Furthermore, people aged more than 60 have to reserve the cardiac monitoring before the treatment (in case of heart trouble), which means they have to wait another few months.</P>
+						<img src="images/Uteeth/5.jpg" style="width: 48%; float: left">
+						<img src="images/Uteeth/6.jpg" style="width: 48%; float: right">
+						<img src="images/Uteeth/7.jpg" style="margin-top: 20px">
+
+						<h3>Competitive Analysis: What is in the market?</h3>
+						<P>What if we can check our teeth at home?
+
+							Currently, there is only a few products focusing on tooth detecting, which is an opportunity.
+
+							Apart from that, silical gel has become a new material of brush, because of its durability and bioaffinity.
+
+							Besides, new types of devices like Unico is breaking the boundaries between various kinds of oral health equipment.</P>
+						<img src="images/Uteeth/8.jpg">
+
+						<h3>Case Study: Can I see your washroom?</h3>
+						<P>To deeply research, I asked several respondents to take photos of their washrooms. Overall, there are many existing problems and pain points in the current medical system.</P>
+						<img src="images/Uteeth/9.jpg" style="width: 50%; float: left">
+						<img src="images/Uteeth/10.jpg" style="width: 50%; float: right">
+						<P>&nbsp;</P>
+
+						<h3>Trend Analysis: Affinity(young, natural, positive...) design</h3>
+						<P>After Skeumorphism and flat, there should be a new style of design.
+							To some extent, this changing preference is a reflection of the change in people’s mind.
+							Curious and excited, people needed a metaphor to better know the virtual world at first. However,
+							owing to the information explosion, they became tired of too much information, and therefore designers
+							make their apps flat and simple. Living under intense pressure, people are now finding some sentimental value on their
+							daily-use items. As a result, designers tend to add some young, natural,and positive elements on their simple design.
+						</P>
+						<img src="images/Uteeth/11.jpg">
+
+						<h3>
+							Value Proposition Canvas: What do we need?
+						</h3>
+						<P><b>
+							What if there is a system allowing users to do dental examination themselves easily at home, instead of going to hospitals?
+<br>
+							What we need is Uteeth:
+							An intelligent device to examine the teeth status, an App to check the feedback, and a system to upload the data for analyzing.
+
+						</b>
+						</P>
+						<img src="images/Uteeth/12.jpg">
+
+						<h3>Functional Analysis: Decay & Odontolith</h3>
+						<P>Decay and odontolith are two of the most serious dental diseases, which can be detected by X-rays.</P>
+						<img src="images/Uteeth/13.jpg" style="width: 50%; margin-left: 25%">
+
+						<h3>Technical & Material Analysis</h3>
+						<P>The technologies that can be applied on Uteeth.</P>
+						<img src="images/Uteeth/14.jpg">
+
+						<h3>Journey Map: Make Uteeth Easy to Use!</h3>
+						<P>Based on the Peak Value and End Value Theory, the overall user experience is primarily determined by the best, worst, and last moment. As a result, focusing on these touch points in a journey map is more effective.
+							Here journey map is used to guide my following design.</P>
+						<img src="images/Uteeth/15.jpg" id="4">
+
+						<h3>Product Design</h3>
+						<P>Uteeth is a smart device that allows users to detect their teeth status at home. The camera on it could capture the image of users' teeth and analyze the picture automatically, with the assistance of an TPU and an Artificial Intelligence microchip. Uteeth is primarily designed to detect users' decay, dental calculus and odontolith. Uteeth is water-proof and can be washed directly after using. The part which touches teeth is made of transparent silicagel, in order to let the light pass through. Users could check the feedback and professional advices via a specially designed app.
+							Eventually, users can put Uteeth into the box to charge and ultrasonic sterilization.
+						</P>
+						<img src="images/Uteeth/16.jpg">
+						<img src="images/Uteeth/17.jpg">
+						<img src="images/Uteeth/18.jpg">
+						<img src="images/Uteeth/19.jpg">
+						<img src="images/Uteeth/20.jpg">
+						<img src="images/Uteeth/21.jpg">
+
+						<h3>3D Printing</h3>
+						<P>In order to test my design, I made a 1:1 model by 3D printing.</P>
+						<img src="images/Uteeth/22.jpg" id="5">
+
+						<h3>App Design</h3>
+						<h4>Information Architecture</h4>
+						<P>The function of the app is relatively simple - to help users check the feedback and contact the doctor. They can also compare their results with friends, wich could in turn motivate them to keep their teeth healthy.</P>
+						<img src="images/Uteeth/23.png">
+						<h4>Wireframe & Usability Test</h4>
+						<P>In order to improve the immersion and the mission success rate, there are not many buttons. I first made a low-fidelity prototype and tested it with users together. After the usability test, I found several problems in my App. ( the blue circles are problems)
+<br>
+							1. To attract users, the feedback should be more vivid and direct.<br>
+							2. The "history" page should contain overall statistics, such as a line graph.<br>
+							3. The "friend" page should include their profile pictures.<br>
+							4. Users want to compare their statistics with their friends'.<br>
+							5. "My records" should be in the "history" page.</P>
+						<img src="images/Uteeth/24.jpg" style="width: 80%; margin-left: 10%">
+
+						<h4>Prototype</h4>
+						<P>
+							Everyone is afraid of doctors. The feedback page can be more friendly.The whole process should also be more interesting.
+						</P>
+						<img src="images/Uteeth/25.png" style="width: 60%; margin-left: 20%">
+
+						<h4>Iteration</h4>
+						<P>
+							In order to make the whole process more interesting and attracting, I introduced a cute monster as a character of the app. With 32 teeth, the monster "Uteeth" will open its mouth to show the result of detection. Besides, users can compare their scores with their friends', which is also a motivation. The color(blue & black) is not only futuristic but also in accordance with the color of the product design of Uteeth.
+						</P>
+						<img src="images/Uteeth/26.jpg">
+
+						<h4>High-fidelity prototype</h4>
+						<P>
+							Eventually, I made a high-fidelity prototype by Principle. (It's a video!:))
+						</P>
+                        <iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/yYtQNN1HABQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                        <h3>Service System</h3>
+						<P>
+							All the detection results will be uploaded after asking for the permission of users, allowing doctors and researchers to analyze. The vision of Uteeth is to build a database of oral health, allowing patients to check their teeth, or even to deal with some mild diseases at home.
+
+							<br><br>
+							The collected data could record the exact time, location and reason of the oral diseases, which could benefit the whole treating process to large extent. Besides, the system could also provide researchers the first-hand information, and therefore could facilitate the development of stomatology in the whole world.
+						</P>
+						<img src="images/Uteeth/27.png">
+
+						<h3>Scenario</h3>
+						<img src="images/Uteeth/0.0.jpg">
+
+
+
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer footer--dark">
+		<div class="container">
+			<div class="footer__inner">
+				<a href="index_before.html" class="footer__textLogo">William Jin</a>
+				<div class="footer__data">
+					<div class="footer__data__item">
+						<div class="footer__row">
+							Email: williamjinq@outlook.com</div>
+						<div class="footer__row">
+						</div>
+					</div>
+					<!--
+                    <div class="footer__data__item">
+                        <div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
+                        </div>
+                    </div>
+                    <div class="footer__data__item">
+                    <div class="footer__row">
+                        <a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="./additional.html" class="footer__link">MIT license</a>
+                    </div>
+                    -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src='js/app.min.js'></script>
+</body>
+</html>

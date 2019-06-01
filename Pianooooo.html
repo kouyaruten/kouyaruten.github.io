@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>William Jin | Design Everything</title>
+	<link rel='stylesheet' href='css/style.min.css' />
+	<style>
+		.shadow{
+
+			transition: all .3s;
+		}
+		.shadow:hover{
+			-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+			-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+			box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+
+		}
+		.shado{
+			-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+			-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+			box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+		}
+		.overlay{
+			position: absolute;
+
+			width: auto;
+
+
+			background-color: rgba(255, 255, 255, .95);
+			opacity: 0;
+			-webkit-transition: .3s all;
+			-o-transition: .3s all;
+			transition: .3s all
+		}
+		.overlay:hover{
+			opacity: 1;
+		}
+		.step{
+			width: 33%;
+		}
+		.hero{
+			background-image: url(images/evie_default_bg.jpeg);
+		}
+		.navbar__logo{
+			color: #303030;
+
+		}
+		.navbar{
+			background-color: #fff;
+		}
+		.navbar__menu {
+			-webkit-text-fill-color: #303030;
+
+
+		}
+		.navbar__inner{
+			color: #303030
+		}
+		.navbar__menu a {
+			color: #303030
+		}
+		.navbar__menu a:after {
+			display: block;
+			content: "";
+			border-bottom: 2px solid #707070;
+			-webkit-transform: scaleX(0);
+			-ms-transform: scaleX(0);
+			transform: scaleX(0);
+			-webkit-transition: -webkit-transform .25s ease-in-out;
+			transition: -webkit-transform .25s ease-in-out;
+			transition: transform .25s ease-in-out;
+			transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out
+		}
+		.expanded__content{
+			width: 60%;
+		}
+
+		.landing__section:nth-child(odd) {
+			background-color: #f7f7f7;
+			border-top: 0px solid #eee;
+			border-bottom: 0px solid #eee
+
+		}
+		.landing__section{
+			background-color: #f7f7f7;
+		}
+
+
+
+	</style>
+</head>
+<body style="background-color: #f7f7f7; font-family: sans-serif">
+	<!-- navbar -->
+	<div class="navbar">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="index.html" class="navbar__logo">William</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="#">Top</a></li>
+						<li><a href="index.html">Home</a></li>
+
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<div style="background-color: #6c63ff; height: 70px"></div>
+	<!-- Page content -->
+	<div class="app">
+		<div class="container">
+			<div class="app__inner">
+				<div class="app__menu">
+					<ul class="vMenu">
+						<li><a href="#" class="vMenu--active">Project Brief</a></li>
+						<li><a href="#2">Background</a></li>
+						<li><a href="#3">Case Study</a></li>
+						<li><a href="#4">Solution</a></li>
+						<li><a href="#5">Deliverable</a></li>
+					</ul>
+				</div>
+				<div class="app__main">
+					<div class="text-container">
+						<h1 class="app__main__title">Pianooooo</h1>
+						<P>Service & UX Design / Independent Work</P>
+						<h3>Project Brief</h3>
+						<P>Pianooooo is a service design that have different functions and can be applied in different areas. Users can play the piano by scanning the QR code. Those who cannot play the piano can also try to play it like a game. Others can buy food, drink and related souvenirs as well as taking a rest at Pianooooo. After playing the piano, users who are interested in Pianooooo can purchase online courses and piano tickets via the App.
+						</P>
+						<P style="color: #CB4D4D">
+							Pianooooo was realized by others several months after I finished my design, though in a relatively simple and primitive form(users can only scan the QR code to play the piano). Though disappointing, it proved the possibility and lucrativeness of such a business model, as well as my insight in the realm of business.</P>
+
+						<img src="images/Pianooooo/0.0.jpg" id="2">
+
+						<h3 >Bacground: In a hurry</h3>
+						<P>Many people are suffering from anxiety and becoming workaholics nowadays, owning to their
+							extremely fast lifestyle. As is reported, 21.5% of the people are suffering from anxiety and 2.5% are
+							suffering from severe anxiety. For them, there is no time to take a break and rethink the meaning of life.
+							Those under such intense pressure may end up never returning to normal life.
+						</P>
+
+						<img src="images/Pianooooo/40.png" style="width: 40%; margin-left: 30%">
+						<h4>Play me, I'm yours</h4>
+						<P>
+							Touring internationally since 2008, Play Me, I'm Yours is an artwork by British artist Luke Jerram. Reaching over 10 million people worldwide, more than 1,700 street pianos have already been installed in over 55 cities across the globe, from London to New York, bearing the simple instruction Play Me, I'm Yours.
+
+							(source:http://www.streetpianos.com)<br>
+
+							Street pianos also attracted some famous pianists, such as Valentina Lisitsa and Lang Lang.
+						</P>
+						<img src="images/Pianooooo/7.jpg">
+						<h4>More than a piano</h4>
+						<P>Those pianos are often painted in imaginative colors, which facilitates their aesthetic, as well as making them more noticeable. They should be also considered as attractions, instead of merely pianos.
+
+							Attracted by the elegant music, people passing by would stop and stay there for a moment, which would not take too much time but instead give them a chance to calm down and escape from the hurry life.</P>
+						<img src="images/Pianooooo/43.jpg">
+						<img src="images/Pianooooo/44.jpg">
+						<h3>SWOT Analysis: How Can We Improve Them?</h3>
+						<P>Though the public piano is primarily an artwork currently, it has its potential to become a brand-new business model.</P>
+						<img src="images/Pianooooo/46.png" id="3">
+
+						<h3>Field Trip & Interview: Where?</h3>
+
+						<P>Public pianos are suitable at nearly any place, especially in hospitals, stations, schools, cafes and shopping centers where many people spend their considerable time waiting or doing other things.
+<br><br>
+							I went to several representing places and interviewed some pedestrians, most of whom felt good about those pianos.
+							<br><br>
+							Public pianos also have different functions in diverse places. They can facilitate the recovery of patients, or mollify the people who are waiting for their flights. Most importantly, they can bring happiness to everyone around.
+							<br><br>
+							Usually these facilities are located in city centers where people lead a fast lifestyle and live under intense pressure. I hope to create a way to extend the time when people are staying near the public pianos.</P>
+						<img src="images/Pianooooo/47.jpg">
+						<img src="images/Pianooooo/48.png" style="width: 80%; margin-left: 10%">
+<h3>Detailed Interview: Who?</h3>
+						<P>I have interviewed several people about their attitude towards street pianos.
+
+							Overall, almost all of them embrace this new type of invention, which brings them the chance to appreciate the beauty of music. Those who can play the piano tend to "show off", while others are willing to watch for a while.</P>
+						<img src="images/Pianooooo/3.jpg">
+						<img src="images/Pianooooo/4.jpg">
+						<img src="images/Pianooooo/5.jpg">
+
+						<h3>Persona</h3>
+						<P>According to interviews on 2 men and 2 women, I summarized a persona.</P>
+						<img src="images/Pianooooo/49.png">
+						<h3>Journey Map: One special day of Sarah</h3>
+						<P>There are possibilities of unexpected frustrations as well as chances to meet public pianos in daily life of Sarah.
+
+							Public pianos should appear appropriately, to alleviate, or even eradicate people's bad moods.
+
+							<br><br>Pain Points: Limited users, limited time, boredom, shyness & cost</P>
+						<img src="images/Pianooooo/50.jpg" id="4">
+						<h3>Problems & Solutions: How can we improve public pianos?</h3>
+						<img src="images/Pianooooo/51.png">
+
+						<h3>Competitive Analysis</h3>
+						<P>As a brand-new business model, public pianos are facing the challenge from existing things.
+
+							I tried to combine these different advantages and to avoid disadvantages.
+
+						</P>
+						<img src="images/Pianooooo/52.jpg" id="5">
+
+						<h3>Business Model Canvas</h3>
+						<img src="images/Pianooooo/53.jpg">
+
+						<h3>Service Blueprint</h3>
+						<img src="images/Pianooooo/54.jpg">
+
+						<h3>Souvenirs</h3>
+						<P>As a brand, Pianooooo could increase its profit by selling related and well-designed souvenirs.</P>
+						<img src="images/Pianooooo/6.jpg">
+						<img src="images/Pianooooo/55.jpg">
+
+						<h3>App Design</h3>
+						<h4>Information Architecture</h4>
+						<P>The major function of the App is to reserve/play a piano. Users can check the nearby pianos on the homepage and reserve one. In other cases, they can go to a nearby piano and scan the QR code to play it. Meanwhile, users can buy food, drink, souvenirs, online piano courses and piano tickets via the App. They can also recharge their wallets and view their purchases.
+						</P>
+						<img src="images/Pianooooo/14.jpeg" style="width: 50%; margin-left: 25%">
+						<h4>User Interface</h4>
+						<P>Users can find a nearby piano at homepage and scan the QR code to play it.</P>
+						<img src="images/Pianooooo/34.jpg" style="width: 30%; float: left" class="shado">
+						<img src="images/Pianooooo/39.jpg" style="width: 30%; float: left; margin-left: 5%" class="shado">
+						<img src="images/Pianooooo/33.jpg" style="width: 30%; float: left; margin-left: 5%" class="shado">
+						<P>&nbsp;<br><br>They can buy piano tickets and online courses at a discount if they are interested in piano playing.
+						</P>
+						<img src="images/Pianooooo/37.jpg" style="width: 30%; float: left" class="shado">
+						<img src="images/Pianooooo/32.jpg" style="width: 30%; float: left; margin-left: 5%" class="shado">
+						<img src="images/Pianooooo/35.jpg" style="width: 30%; float: left; margin-left: 5%" class="shado">
+						<P>&nbsp;<br><br>Users can also deposit their money in the "Wallet" and therefore buy food, drink and souvenirs.
+						</P>
+						<img src="images/Pianooooo/36.jpg" style="width: 30%; float: left" class="shado">
+						<img src="images/Pianooooo/38.jpg" style="width: 30%; float: left; margin-left: 5%" class="shado">
+						<img src="images/Pianooooo/31.jpg" style="width: 30%; float: left; margin-left: 5%" class="shado">
+						<img src="images/Pianooooo/app.jpg" style="margin-top: 50px">
+
+						<h3>Storyboard</h3>
+						<P><i>1. A piano?</i></P>
+						<img src="images/Pianooooo/21.jpg">
+						<P><i>2. Scan the QR code... But I don't know how to play a piano...</i></P>
+						<img src="images/Pianooooo/22.jpg">
+						<P><i>3. Cool! It's like a music game!</i> - those who cannot play the piano can play Pianooooo's game mode.</P>
+						<img src="images/Pianooooo/23.jpg">
+						<P><i>4. Who is playing the piano?</i></P>
+						<img src="images/Pianooooo/24.jpg">
+						<P><i>5. Okay... I just bought a soda via the App...</i></P>
+						<img src="images/Pianooooo/25.jpg">
+						<P><i>6. Maybe I should take a rest....</i></P>
+						<img src="images/Pianooooo/26.jpg">
+						<P><i>7. I love this song!</i></P>
+						<img src="images/Pianooooo/27.jpg">
+						<P><i>8. May I have a cup of coffee?</i></P>
+						<img src="images/Pianooooo/28.jpg">
+						<P><i>9. It's for you, sir. Thanks for your performance!
+							</i> - a round hole on the piano could give others a chance to express their appreciation - what else is better than a cup of coffee?</P>
+						<img src="images/Pianooooo/29.jpg">
+						<P><i>10. Look! It is bustling with noise and excitement!</i></P>
+						<img src="images/Pianooooo/30.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer footer--dark">
+		<div class="container">
+			<div class="footer__inner">
+				<a href="index_before.html" class="footer__textLogo">William Jin</a>
+				<div class="footer__data">
+					<div class="footer__data__item">
+						<div class="footer__row">
+							Email: williamjinq@outlook.com</div>
+						<div class="footer__row">
+						</div>
+					</div>
+					<!--
+                    <div class="footer__data__item">
+                        <div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
+                        </div>
+                    </div>
+                    <div class="footer__data__item">
+                    <div class="footer__row">
+                        <a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="./additional.html" class="footer__link">MIT license</a>
+                    </div>
+                    -->
+				</div>
+			</div>
+		</div>
+	</div>
+<script src='js/app.min.js'></script>
+</body>
+</html>
