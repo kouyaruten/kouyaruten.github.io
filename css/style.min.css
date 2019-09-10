@@ -318,7 +318,7 @@ a {
 
 .button, button {
     display: inline-block;
-    padding: 6pt 20pt;
+    padding: 8pt 40pt;
     line-height: 1.7;
     border: 1px solid #6c63ff;
     color: #6c63ff;
@@ -327,9 +327,9 @@ a {
     white-space: nowrap;
     cursor: pointer;
     background-color: transparent;
-    border-radius: 30px;
+    border-radius: 5px;
     margin-bottom: 1.3em;
-    transition: .7s;
+    transition: .25s;
     text-align: center;
     text-decoration: none
 }
@@ -342,6 +342,10 @@ a {
     .button:hover, button:hover {
         border-color: #463aff;
         color: #463aff
+        -webkit-box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.2);
+        box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.2);
+
     }
 }
 
@@ -995,7 +999,7 @@ select::-ms-expand {
     color: #666;
     -webkit-transition: .7s;
     transition: .7s;
-    cursor: pointer
+
 }
 
 @media (min-width: 992px) {
