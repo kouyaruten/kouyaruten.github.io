@@ -1241,7 +1241,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       },
 
       /**
-       * Creates Styles to the <head>
+       * Creates Styles to the <head> <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
        */
       _createStyles: function () {
         if (!styleElement.parentNode) {
@@ -1251,7 +1251,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       },
 
       /**
-       * Removes styles from the <head>
+       * Removes styles from the <head> <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
        */
       _removeStyles: function () {
         if (styleElement.parentNode) {
@@ -1426,7 +1426,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
       /**
        * Calculates the height of the navigation and then creates
-       * styles which are later added to the page <head>
+       * styles which are later added to the page <head> <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
        */
       _calcHeight: function () {
         var savedHeight = 0;
