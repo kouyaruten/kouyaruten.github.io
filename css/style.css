@@ -429,7 +429,7 @@ button, .button {
   line-height: 1.7;
   border: 1px solid #6C63FF;
   color: #6C63FF;
-  font-weight: 400;
+  font-weight: bolder;
   transition: 0.1s;
   white-space: nowrap;
   cursor: pointer;

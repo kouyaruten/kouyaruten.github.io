@@ -323,7 +323,7 @@ a {
     line-height: 1.7;
     border: 1px solid #6c63ff;
     color: #6c63ff;
-    font-weight: 900;
+    font-weight: bolder;
     -webkit-transition: .1s;
     white-space: nowrap;
     cursor: pointer;
