@@ -430,13 +430,13 @@ button, .button {
   border: 1px solid #6C63FF;
   color: #6C63FF;
   font-weight: 400;
-  transition: 0.7s;
+  transition: 0.1s;
   white-space: nowrap;
   cursor: pointer;
   background-color: transparent;
   border-radius: 30px;
   margin-bottom: 1.3em;
-  transition: 0.7s;
+  transition: 0.1s;
   text-align: center;
   text-decoration: none; }
   button:hover, button:focus, .button:hover, .button:focus {

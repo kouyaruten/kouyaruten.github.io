@@ -318,20 +318,21 @@ a {
 
 .button, button {
     display: inline-block;
-    padding: 8pt 40pt;
+    padding: 10pt 30pt;
     line-height: 1.7;
     border: 1px solid #6c63ff;
     color: #6c63ff;
-    font-weight: 400;
-    -webkit-transition: .7s;
+    font-weight: 900;
+    -webkit-transition: .1s;
     white-space: nowrap;
     cursor: pointer;
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 30px;
     margin-bottom: 1.3em;
-    transition: .25s;
+    transition: .1s;
     text-align: center;
     text-decoration: none
+
 }
 
 .button:focus, .button:hover, button:focus, button:hover {
@@ -342,9 +343,9 @@ a {
     .button:hover, button:hover {
         border-color: #463aff;
         color: #463aff
-        -webkit-box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.2);
-        -moz-box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.2);
-        box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.2);
+        -webkit-box-shadow: 0px 2px 20px 1px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 2px 20px 1px rgba(0,0,0,0.2);
+        box-shadow: 0px 2px 20px 1px rgba(0,0,0,0.2);
 
     }
 }
