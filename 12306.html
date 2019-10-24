@@ -108,22 +108,22 @@
 			<div class="app__inner">
 				<div class="app__menu">
 					<ul class="vMenu" style="position: fixed">
-						<li><a href="#"  >Project Brief</a></li>
-						<li><a href="#2" >Heuristic Evaluation</a></li>
-						<li><a href="#3">Redesign</a></li>
-						<li><a href="#4">UI Movement</a></li>
+						<li><a onclick="myFunction(1)" style="cursor: pointer" >Project Brief</a></li>
+						<li><a onclick="myFunction(2)" style="cursor: pointer" >Heuristic Evaluation</a></li>
+						<li><a onclick="myFunction(3)" style="cursor: pointer">Redesign</a></li>
+						<li><a onclick="myFunction(4)" style="cursor: pointer">UI Movement</a></li>
 					</ul>
 				</div>
 				<div class="app__main">
 					<div class="text-container">
-						<h1 class="app__main__title">Design Challenge:<br>
+						<h1 id="1" class="app__main__title">Design Challenge:<br>
 							Redesign of 12306.cn & its App in 1 Day</h1>
 						<P>UI/UX design/ Independent Project</P>
 						<h3>Project Brief</h3>
 						<P>As the biggest online train ticket retailer in China, 12306.cn and its mobile App are not designed user-friendly. Therefore, after the usability test and user research, I redesigned them.</P>
-						<P id="2" style="color: #CB4D4D"><b>The whole design was finished in 1 day.</b></P>
+						<P  style="color: #CB4D4D"><b>The whole design was finished in 1 day.</b></P>
 
-						<h3>Heuristic Evaluation</h3>
+						<h3 id="2">Heuristic Evaluation</h3>
 						<P>According to Nielsen's 10 Usability Heuristics, I conducted a heuristic evaluation of 12306.cn and found some problems.</P>
 						<P><B>Task 1: Buying Tickets</B></P>
 						<P>There is so much information on the website that I cannot find where can I buy tickets at first. I looked at the navigation bar, but the "buy tickets" button was not there. Instead, it was hidden on the left side.
@@ -159,9 +159,9 @@
 							Visibility of sytem status<br>
 							Recognition rather than recall<br>
 						Consistency and standards</B></P>
-						<img id="3" src="images/12306/26.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0 ">
+						<img  src="images/12306/26.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0 ">
 
-						<h3>Redesign: Information Architecture</h3>
+						<h3 id="3">Redesign: Information Architecture</h3>
 						<P>As the most important and frequently-used function, ticket purchasing should be conspicuous at the homepage.<br><br>
 
 							All the information is in the "about" page. The 12306 member is also an important feature and a source of profit.<br><br>
@@ -204,9 +204,9 @@
 						In most cases, the departure's time and station are more important than arrival's(which are designed less conspicuous).</P>
 					<img src="images/12306/13.jpg" style=" width: 30%;  box-shadow: 0px 0px 20px #c0c0c0 ">
 					<img src="images/12306/14.jpg" style=" width: 30%; margin-left: 3%; box-shadow: 0px 0px 20px #c0c0c0 ">
-					<img id="4" src="images/12306/17.jpg" style=" width: 30%; margin-left: 3%; box-shadow: 0px 0px 20px #c0c0c0 ">
+					<img  src="images/12306/17.jpg" style=" width: 30%; margin-left: 3%; box-shadow: 0px 0px 20px #c0c0c0 ">
 
-					<h3>UI Movement Design</h3>
+					<h3 id="4">UI Movement Design</h3>
 					<P>The UI movements are designed user-friendly as well as interesting.</P>
 					<iframe width="60%" height="465" src="https://www.youtube.com/embed/6oL7CsDvgPE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -249,5 +249,10 @@
 		</div>
 	</div>
 <script src='js/app.min.js'></script>
+	<script>function myFunction(n) {
+        var elmnt = document.getElementById(n);
+        elmnt.scrollIntoView();
+        window.scrollBy(0, -80);
+    }</script>
 </body>
 </html>

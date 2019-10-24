@@ -108,24 +108,24 @@
 			<div class="app__inner">
 				<div class="app__menu" >
 					<ul class="vMenu" style="position: fixed">
-						<li><a href="#"  >Project Brief</a></li>
-						<li><a href="#2" >Background</a></li>
-						<li><a href="#3">User Research</a></li>
-						<li><a href="#4">Product Design</a></li>
-						<li><a href="#5">App Design</a></li>
+						<li><a onclick="myFunction(1)" style="cursor: pointer"  >Project Brief</a></li>
+						<li><a onclick="myFunction(2)" style="cursor: pointer" >Background</a></li>
+						<li><a onclick="myFunction(3)" style="cursor: pointer">User Research</a></li>
+						<li><a onclick="myFunction(4)" style="cursor: pointer">Product Design</a></li>
+						<li><a onclick="myFunction(5)" style="cursor: pointer">App Design</a></li>
 					</ul>
 				</div>
 				<div class="app__main">
 					<div class="text-container">
-						<h1 class="app__main__title">Uteeth</h1>
+						<h1 class="app__main__title" id="1">Uteeth</h1>
 						<P>Product & UX Design / Independent Work</P>
 						<h3>Project Brief</h3>
 						<p>Uteeth is a smart device that allows users to detect their teeth status at home. The camera on it could capture the image of users' teeth and analyze the picture automatically, with the assistance of an TPU and an Artificial Intelligence microchip. Uteeth is primarily designed to detect users' decay, dental calculus and odontolith. Users could check the feedback and professional advices via a specially designed app. Eventually, users can put Uteeth into the box to recharge.
 							All the detection results will be uploaded after asking for the permission of users, allowing doctors and researchers to analyze. The vision of Uteeth is to build a database of oral health, allowing users to check their teeth, or even to deal with some mild diseases at home.</p>
 						<img src="./images/Uteeth/0.0.jpg" >
 						<h3>Design Process</h3>
-						<img src="images/Uteeth/1.jpg" style="opacity: .9" id="2">
-						<h3>Background - Expensive Teeth</h3>
+						<img src="images/Uteeth/1.jpg" style="opacity: .9" >
+						<h3 id="2">Background - Expensive Teeth</h3>
 						<P>As is said by a doctor from the PLAZA dental hospital, the price of dental implant is around 3,500 dollars on average. Moreover, merely a teeth check may cost more than 1,000 dollars.
 							Dentistry is always regarded as the most extravagant medical consumption field, which is the last 10% consumption in health. In the world range, oral health consumption takes up about 6% in the whole health expenditure generally. The figure turns to 0.5% in Mongolia, and to 8% in America.
 							Apart from the expensive price, patients have to make an appointment in advance, and wait for even several months before they could eventually see the doctor.
@@ -149,9 +149,9 @@
 							Apart from that, silical gel has become a new material of brush, because of its durability and bioaffinity.
 
 							Besides, new types of devices like Unico is breaking the boundaries between various kinds of oral health equipment.</P>
-						<img id="3" src="images/Uteeth/8.jpg">
+						<img  src="images/Uteeth/8.jpg">
 
-						<h3 >Case Study: Can I see your washroom?</h3>
+						<h3 id="3">Case Study: Can I see your washroom?</h3>
 						<P>To deeply research, I asked several respondents to take photos of their washrooms. Overall, there are many existing problems and pain points in the current medical system.</P>
 						<img src="images/Uteeth/9.jpg" style="width: 50%; float: left">
 						<img src="images/Uteeth/10.jpg" style="width: 50%; float: right">
@@ -191,9 +191,9 @@
 						<h3>Journey Map: Make Uteeth Easy to Use!</h3>
 						<P>Based on the Peak Value and End Value Theory, the overall user experience is primarily determined by the best, worst, and last moment. As a result, focusing on these touch points in a journey map is more effective.
 							Here journey map is used to guide my following design.</P>
-						<img src="images/Uteeth/15.jpg" id="4">
+						<img src="images/Uteeth/15.jpg" >
 
-						<h3>Product Design</h3>
+						<h3 id="4">Product Design</h3>
 						<P>Uteeth is a smart device that allows users to detect their teeth status at home. The camera on it could capture the image of users' teeth and analyze the picture automatically, with the assistance of an TPU and an Artificial Intelligence microchip. Uteeth is primarily designed to detect users' decay, dental calculus and odontolith. Uteeth is water-proof and can be washed directly after using. The part which touches teeth is made of transparent silicagel, in order to let the light pass through. Users could check the feedback and professional advices via a specially designed app.
 							Eventually, users can put Uteeth into the box to charge and ultrasonic sterilization.
 						</P>
@@ -206,9 +206,9 @@
 
 						<h3>3D Printing</h3>
 						<P>In order to test my design, I made a 1:1 model by 3D printing.</P>
-						<img src="images/Uteeth/22.jpg" id="5">
+						<img src="images/Uteeth/22.jpg" >
 
-						<h3>App Design</h3>
+						<h3 id="5">App Design</h3>
 						<h4>Information Architecture</h4>
 						<P>The function of the app is relatively simple - to help users check the feedback and contact the doctor. They can also compare their results with friends, wich could in turn motivate them to keep their teeth healthy.</P>
 						<img src="images/Uteeth/23.png">
@@ -299,5 +299,11 @@
 	</div>
 
 <script src='js/app.min.js'></script>
+	<script src='js/app.min.js'></script>
+	<script>function myFunction(n) {
+        var elmnt = document.getElementById(n);
+        elmnt.scrollIntoView();
+        window.scrollBy(0, -80);
+    }</script>
 </body>
 </html>

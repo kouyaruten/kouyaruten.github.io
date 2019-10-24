@@ -108,25 +108,25 @@
 			<div class="app__inner">
 				<div class="app__menu">
 					<ul class="vMenu"style="position: fixed">
-						<li><a href="#" >Project Brief</a></li>
-						<li><a href="#2" >Background</a></li>
-						<li><a href="#3">Inspiration</a></li>
-						<li><a href="#4">Research</a></li>
-						<li><a href="#5">Design</a></li>
+						<li><a onclick="myFunction(1)" style="cursor: pointer">Project Brief</a></li>
+						<li><a onclick="myFunction(2)" style="cursor: pointer" >Background</a></li>
+						<li><a onclick="myFunction(3)" style="cursor: pointer">Inspiration</a></li>
+						<li><a onclick="myFunction(4)" style="cursor: pointer">Research</a></li>
+						<li><a onclick="myFunction(5)" style="cursor: pointer">Design</a></li>
 					</ul>
 				</div>
 				<div class="app__main">
 					<div class="text-container">
-						<h1 class="app__main__title">Carlette</h1>
+						<h1 id="1" class="app__main__title">Carlette</h1>
 						<P>Interaction Design / Independent Project</P>
 						<h3>Project Brief</h3>
 						<P>
 							Carlette is a combination of the words car and roulette. As a system designed not only to help those suffering from road rage, but also to become the first step of "car sociality", it can alleviate drivers' pressure significantly, and create a friendly atmosphere.
 						</P>
 						<img src="images/Carlette/1.jpg" >
-						<img id="2" src="images/Carlette/0.jpg" style="width: 80%; margin-left: 10%">
+						<img  src="images/Carlette/0.jpg" style="width: 80%; margin-left: 10%">
 
-						<h3 >Background & Trend: Car+Social Network</h3>
+						<h3 id="2">Background & Trend: Car+Social Network</h3>
 						<P>Car, as a reflection of owner's taste and status, is much more than merely a vehicle. Currently, there are apps for car-lovers to chat and meet. However, it is more convenient if they can be acquainted with each other more directly.
 
 							With the development of techniques mentioned above, car social networking may be a new trend of socialization. During this fragmented time, People can sit in their level 5 autonomous cars, and chat with people in other cars nearby, which will create a friendly atmosphere for drivers. However, currently there are certain dangers that cannot be ignored. The premise of car social networking is safety. The risk of interference should be minimized.
@@ -159,18 +159,18 @@
 						<P><b>Internet of Things(IoT)</b></P>
 						<P>The Internet of things (IoT) is the network of physical devices, vehicles, home appliances and other items embedded with electronics, software, sensors, actuators, and connectivity which enables these objects to connect and exchange data.</P>
 						<P><B>IoT is a foundation of smart home appliances, which can be also used in a car.</B></P>
-						<img id="3" src="images/Carlette/33.jpg" style="width: 60%; margin-left: 20%" >
+						<img  src="images/Carlette/33.jpg" style="width: 60%; margin-left: 20%" >
 
-						<h3>Inspiration</h3>
+						<h3 id="3">Inspiration</h3>
 						<P>Inspired by the chat wheel in Dota2,
 							I hope to design a system allowing drivers to send messages<b> only
 							by pushing the controller at the center. They can choose five of the
 								most frequently used greetings, and set the order.</b></P>
 						<P>Chat Wheel in Dota2 is a system designed to help players from different countries chat friendly. Users can set up 8 phrases in advance, and send them only by moving the mouse to different directions after pressing "y", which will automatically translated into different languages for different players. It allows players to send their message as soon as possible - they
 							only have to remember the direction, instead of the exact position.</P>
-						<img id="4" src="images/Carlette/21.jpg" style="width: 60%; margin-left: 20%" >
+						<img  src="images/Carlette/21.jpg" style="width: 60%; margin-left: 20%" >
 
-						<h3>Interaction Analysis</h3>
+						<h3 id="4">Interaction Analysis</h3>
 						<P>A round display is better than other forms, according to ergonomics.
 
 							The chat wheel minimized the disturbance during the game, and can be applied in a car as a convenient way of interaction.</P>
@@ -185,9 +185,9 @@
 
 						<h3>Persona</h3>
 						<P>This is a summary of the results in five interviews. The drivers are catagorized into two groups: novice and veteran.</P>
-						<img id="5" src="images/Carlette/34.jpg" >
+						<img  src="images/Carlette/34.jpg" >
 
-						<h3>Carlette: The First Step of Car Sociality</h3>
+						<h3 id="5">Carlette: The First Step of Car Sociality</h3>
 						<P><b>Carlette is a combination of the words car and roulette. As a system designed not only to help those suffering from road rage, but also to become the first step of "car sociality",
 							it can alleviate drivers' pressure significantly, and create a friendly atmosphere.
 						</b>
@@ -261,5 +261,10 @@
 		</div>
 	</div>
 <script src='js/app.min.js'></script>
+	<script>function myFunction(n) {
+        var elmnt = document.getElementById(n);
+        elmnt.scrollIntoView();
+        window.scrollBy(0, -80);
+    }</script>
 </body>
 </html>
