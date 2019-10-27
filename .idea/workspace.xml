@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd426c34-d734-4d99-8a11-2dc711943780" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EZChat.html" beforeDir="false" afterPath="$PROJECT_DIR$/EZChat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IBM.html" beforeDir="false" afterPath="$PROJECT_DIR$/IBM.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/IBM/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/IBM/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/IBM/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/IBM/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/IBM/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/IBM/8.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,8 +58,8 @@
       <file leaf-file-name="IBM.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IBM.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="117" column="39" lean-forward="true" selection-start-line="117" selection-start-column="39" selection-end-line="117" selection-end-column="39" />
+            <state relative-caret-position="400">
+              <caret line="143" lean-forward="true" selection-start-line="143" selection-end-line="143" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -382,12 +382,12 @@
       <workItem from="1571930214068" duration="4004000" />
       <workItem from="1571961612780" duration="869000" />
       <workItem from="1572120635302" duration="745000" />
-      <workItem from="1572144570939" duration="1931000" />
+      <workItem from="1572144570939" duration="2441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33361000" />
+    <option name="totallyTimeSpent" value="33871000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -874,8 +874,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IBM.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="117" column="39" lean-forward="true" selection-start-line="117" selection-start-column="39" selection-end-line="117" selection-end-column="39" />
+        <state relative-caret-position="400">
+          <caret line="143" lean-forward="true" selection-start-line="143" selection-end-line="143" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
