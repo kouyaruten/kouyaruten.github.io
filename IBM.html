@@ -4,6 +4,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>William Jin | Design Everything</title>
 	<link rel='stylesheet' href='css/style.min.css' />
+
 	<style>
 		.shadow{
 
@@ -78,6 +79,39 @@
 		.landing__section{
 			background-color: #f7f7f7;
 		}
+		.img {
+
+			cursor: zoom-in;
+		}
+
+		.window {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			left: 50%;
+			top: 50%;
+			text-align: center;
+			visibility: hidden;
+			opacity: 0;
+			background-color: rgba(30,30,30,0.8);
+			-webkit-transition: all 0.3s;
+			-webkit-transform: translateX(-50%) translateY(-50%) scale(0.6);
+		}
+
+		.window img {
+			height:88%;
+			margin-top:5.5%;
+			align-content: center;
+
+		}
+
+		.window-show {
+			visibility: visible;
+			opacity: 1;
+
+			-webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+		}
+
 
 
 
@@ -143,17 +177,17 @@
 							to help them search by keywords or status. Because of the limited space, I designed a sidebar (Event tab) to show
 							notifications when the data updates.</P>
 
-						<img src="images/IBM/EDPA_New/1.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
+						<img class="img" src="images/IBM/EDPA_New/1.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
 
 						<h4>Data Set Management</h4>
 						<P>It took me a while to persuade engineers in my team to implement the Card Based Design, by Competitor Analysis and A/B Testing. From my opinion, when there's only a
 						few of the elements and we don't have to sort them, Cards are better than tables.</P>
 
-						<img src="images/IBM/EDPA_New/2.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
+						<img class="img" src="images/IBM/EDPA_New/2.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
 						<P>Turning on / off the automatic update is important. Therefore, the according button was
 							designed blue and other buttons are icons from IBM design language and are greyscale.</P>
-						<img src="images/IBM/EDPA_New/3.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
-						<img src="images/IBM/EDPA_New/4.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
+						<img class="img" src="images/IBM/EDPA_New/3.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
+						<img class="img" src="images/IBM/EDPA_New/4.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
 						<img  src="images/IBM/5.png" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
 
 						<h4>What did I learn from that week?</h4>
@@ -163,17 +197,17 @@
 
 						<h3 id="1">RPA</h3>
 						<P>RPA is a robot management platform. I designed several interfaces cooperating with senior designers and made a hi-fi prototype by using invison and principle.</P>
-						<img src="images/IBM/9.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
-						<img src="images/IBM/10.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
-						<img src="images/IBM/11.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
+						<img  src="images/IBM/9.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
+						<img class="img" src="images/IBM/10.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
+						<img  src="images/IBM/11.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
 
 
 
 
 						<h3 id="3">EMMA</h3>
 						<P>I redesigned the interaction process and interfaces of EMMA, which is a web-based platform allowing companies to asses their positions.</P>
-						<img src="images/IBM/7.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
-						<img  src="images/IBM/8.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
+						<img class="img" src="images/IBM/7.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
+						<img  class="img" src="images/IBM/8.jpg" style=" box-shadow: 0px 0px 20px #c0c0c0; margin-top: 10px ">
 
 						<h3 id="4">Smart Community</h3>
 						<P>Smart Community is an mobile app facilitating real estates to manage their communities. </P>
@@ -222,11 +256,37 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="window" id="window">
+		<img src="" id="enlargeimg">
+	</div>
 <script src='js/app.min.js'></script>
 	<script>function myFunction(n) {
         var elmnt = document.getElementById(n);
         elmnt.scrollIntoView();
         window.scrollBy(0, -80);
     }</script>
+	<script>
+        window.onload = function () {
+            var imgs = document.getElementsByClassName('img')
+            var window = document.getElementById('window')
+            var enlargeimg = document.getElementById('enlargeimg')
+            for (var i = 0; i < imgs.length; i++) {
+                imgs[i].onclick = function () {
+                    var src = this.src
+                    initWindowWithIMGAndShow(src)
+                }
+                var initWindowWithIMGAndShow = function (src) {
+                    enlargeimg.src = src
+                    window.classList.add('window-show')
+                    $('nav').hide()
+                }
+            }
+            window.addEventListener('click', function () {
+                window.classList.remove('window-show')
+                $('nav').show()
+            }, false)
+        }
+	</script>
 </body>
 </html>

@@ -78,6 +78,39 @@
 		.landing__section{
 			background-color: #f7f7f7;
 		}
+		.img {
+
+			cursor: zoom-in;
+		}
+
+		.window {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			left: 50%;
+			top: 50%;
+			text-align: center;
+			visibility: hidden;
+			opacity: 0;
+			background-color: rgba(30,30,30,0.8);
+			-webkit-transition: all 0.3s;
+			-webkit-transform: translateX(-50%) translateY(-50%) scale(0.6);
+		}
+
+		.window img {
+			height:88%;
+			margin-top:5.5%;
+			align-content: center;
+
+		}
+
+		.window-show {
+			visibility: visible;
+			opacity: 1;
+
+			-webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+		}
+
 
 
 
@@ -142,41 +175,41 @@
 
 						<h3>Competitive Analysis</h3>
 						<p>How do these popular social media design their App and why?</p>
-						<img src="images/EZChat/34.jpg">
+						<img class="img" src="images/EZChat/34.jpg">
 
 						<h4>Perceptual Mapping</h4>
 						<P>What we need is an highly customized App <a href="CustomizedDesign.html" style="color: blue"><u>(What is Customized Design?)</u></a> that can make a good balance between private and public (i.e. strong and weak ties).</P>
-						<img src="images/EZChat/30.jpg" style="width: 60%; margin-left: 30%">
+						<img src="images/EZChat/30.jpg" style="width: 60%; margin-left: 20%">
 
 						<h4>The lifecycle of Social Media</h4>
 						<P>When a social media first appear, users flock to it and the amount of users can culminate for a long time. Eventually the figure will decline and reach a plateau, when another social media can start to thrive.</P>
-						<img  src="images/EZChat/23.jpg">
+						<img  src="images/EZChat/23.jpg" style="width: 60%; margin-left: 20%">
 
 						<H3 id="3">User Research</H3>
 						<H4>Questionnaire</H4>
 						<P>
 							Questionnaires were sent online and 195 valid ones were collected.
 						</P>
-						<img src="images/EZChat/3.jpg">
+						<img class="img" src="images/EZChat/3.jpg">
 
 						<h4>Detailed User Interview
 						</h4>
 						<P>I found some interesting things during the detailed interview of five people.
 
 						</P>
-						<img src="images/EZChat/4.jpg">
+						<img class="img" src="images/EZChat/4.jpg">
 
 						<h4>Empathy Map: If I am the User...
 						</h4>
 						<P>I used Empathy Map to better understand users' pain points and needs.
 
 						</P>
-						<img src="images/EZChat/22.jpg">
+						<img class="img" src="images/EZChat/22.jpg">
 
 						<h3>Research Summary</h3>
 						<b><P>In weak ties, anxiety and stress come from FOMO and cognitive dissonance, which is a major source. In strong ties, they're from the change of social status and spotlight effect. Anxiety and stress appear mostly on the "Chats" and "Posts" pages. Some users are already tired with numerous social media platforms.
 						</P></b>
-						<img src="images/EZChat/Anxiety%20and%20Stress.png" >
+						<img class="img" src="images/EZChat/35.jpg" >
 
 
 
@@ -256,11 +289,37 @@
 			</div>
 		</div>
 	</div>
+	<div class="window" id="window">
+		<img src="" id="enlargeimg">
+	</div>
 <script src='js/app.min.js'></script>
+
 <script>function myFunction(n) {
     var elmnt = document.getElementById(n);
     elmnt.scrollIntoView();
     window.scrollBy(0, -80);
 }</script>
+	<script>
+        window.onload = function () {
+            var imgs = document.getElementsByClassName('img')
+            var window = document.getElementById('window')
+            var enlargeimg = document.getElementById('enlargeimg')
+            for (var i = 0; i < imgs.length; i++) {
+                imgs[i].onclick = function () {
+                    var src = this.src
+                    initWindowWithIMGAndShow(src)
+                }
+                var initWindowWithIMGAndShow = function (src) {
+                    enlargeimg.src = src
+                    window.classList.add('window-show')
+                    $('nav').hide()
+                }
+            }
+            window.addEventListener('click', function () {
+                window.classList.remove('window-show')
+                $('nav').show()
+            }, false)
+        }
+	</script>
 </body>
 </html>
