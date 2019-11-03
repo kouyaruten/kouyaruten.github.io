@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd426c34-d734-4d99-8a11-2dc711943780" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomizedDesign.html" beforeDir="false" afterPath="$PROJECT_DIR$/CustomizedDesign.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignProcess.html" beforeDir="false" afterPath="$PROJECT_DIR$/DesignProcess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignThinking.html" beforeDir="false" afterPath="$PROJECT_DIR$/DesignThinking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EZChat.html" beforeDir="false" afterPath="$PROJECT_DIR$/EZChat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IBM.html" beforeDir="false" afterPath="$PROJECT_DIR$/IBM.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pianooooo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pianooooo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,8 +58,8 @@
       <file leaf-file-name="DesignTrend.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DesignTrend.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="149" column="109" selection-start-line="149" selection-start-column="109" selection-end-line="149" selection-end-column="109" />
+            <state relative-caret-position="303">
+              <caret line="145" column="27" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#P#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -99,8 +93,8 @@
       <file leaf-file-name="IBM.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IBM.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4400">
-              <caret line="200" column="173" selection-start-line="200" selection-start-column="173" selection-end-line="200" selection-end-column="173" />
+            <state relative-caret-position="196">
+              <caret line="198" column="84" selection-start-line="198" selection-start-column="84" selection-end-line="198" selection-end-column="84" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -136,8 +130,8 @@
       <file leaf-file-name="EZChat.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EZChat.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="180" column="100" selection-start-line="180" selection-start-column="100" selection-end-line="180" selection-end-column="119" />
+            <state relative-caret-position="380">
+              <caret line="250" column="115" selection-start-line="250" selection-start-column="115" selection-end-line="250" selection-end-column="115" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -231,8 +225,6 @@
         <option value="$PROJECT_DIR$/12306.html" />
         <option value="$PROJECT_DIR$/DesignPhilosophy.html" />
         <option value="$PROJECT_DIR$/../工作/my portfolio/project-diversity+.html" />
-        <option value="$PROJECT_DIR$/IBM.html" />
-        <option value="$PROJECT_DIR$/EZChat.html" />
         <option value="$PROJECT_DIR$/Pianooooo.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Trend.html" />
@@ -240,6 +232,8 @@
         <option value="$PROJECT_DIR$/DesignProcess.html" />
         <option value="$PROJECT_DIR$/DesignThinking.html" />
         <option value="$PROJECT_DIR$/DesignTrend.html" />
+        <option value="$PROJECT_DIR$/IBM.html" />
+        <option value="$PROJECT_DIR$/EZChat.html" />
       </list>
     </option>
   </component>
@@ -370,12 +364,12 @@
       <workItem from="1572144570939" duration="9779000" />
       <workItem from="1572551290338" duration="774000" />
       <workItem from="1572710749363" duration="348000" />
-      <workItem from="1572750496570" duration="1133000" />
+      <workItem from="1572750496570" duration="1901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43464000" />
+    <option name="totallyTimeSpent" value="44232000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -689,28 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IBM.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4400">
-          <caret line="200" column="173" selection-start-line="200" selection-start-column="173" selection-end-line="200" selection-end-column="173" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#7;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#8;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#11;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Pianooooo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2750">
@@ -762,10 +734,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CustomizedDesign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="127" column="43" selection-start-line="127" selection-start-column="43" selection-end-line="127" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#img#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IBM.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="198" column="84" selection-start-line="198" selection-start-column="84" selection-end-line="198" selection-end-column="84" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#4;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#6;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#7;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#8;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#11;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/EZChat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="180" column="100" selection-start-line="180" selection-start-column="100" selection-end-line="180" selection-end-column="119" />
+        <state relative-caret-position="380">
+          <caret line="250" column="115" selection-start-line="250" selection-start-column="115" selection-end-line="250" selection-end-column="115" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -778,21 +783,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CustomizedDesign.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="127" column="43" selection-start-line="127" selection-start-column="43" selection-end-line="127" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#img#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DesignTrend.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="149" column="109" selection-start-line="149" selection-start-column="109" selection-end-line="149" selection-end-column="109" />
+        <state relative-caret-position="303">
+          <caret line="145" column="27" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#a#0;n#P#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
