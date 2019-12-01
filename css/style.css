@@ -452,7 +452,7 @@ button, .button {
   color: #fff; }
   @media (min-width: 992px) {
     .button__primary:hover {
-      background-color: #463aff;
+      background-color: c;
       border-color: #463aff;
       color: #fff; } }
 
