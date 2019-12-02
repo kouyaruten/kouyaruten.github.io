@@ -726,7 +726,7 @@ select {
   padding: 24pt 0; }
 
 .landing__section:nth-child(odd) {
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee; }
 
@@ -1043,15 +1043,16 @@ select {
 
 /* Actual content */
 .expanded__image {
-  width: 90%;
-  max-width: 220px;
+  width: 100%;
+  max-width: 440px;
   padding: 16pt 0; }
   @media (min-width: 992px) {
     .expanded__image {
-      max-width: 280px; } }
+      max-width: 560px; } }
 
 .expanded__title {
-  max-width: 550px; }
+  max-width: 550px;
+}
 
 .expanded__text {
   max-width: 60ch; }

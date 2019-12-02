@@ -122,12 +122,23 @@
 
         }
         .expanded__text{
-            max-width: 400px;
+            max-width: 500px;
+
 
         }
         .expanded__title{
-
+            font-size: 50px;
             font-weight: bold;
+            color: #303030;
+            letter-spacing: .5px;
+        }
+        .landing_img{
+            transition: .3s ease-in-out;
+        }
+        .landing_img:hover{
+
+            transform: scale(1.1);
+
         }
 
 
@@ -156,7 +167,7 @@
         <div class="expanded__inner">
             <div class="expanded__content">
                 <h1 style="margin-top: 100px; font-size: 50px;   color: #303030; letter-spacing: .5px"><b>Hi, I'm William.</b> I design (almost) everything.</h1>
-                <p style="font-size: 20px; font-weight: lighter; letter-spacing: .2px">I'm passionate about creating great products by combining ux, business and technology.
+                <p style="font-size: 20px; font-weight: lighter; ">I'm passionate about creating great products by combining ux, business and technology.
                     You can view my <a href="CustomizedDesign.html" class="alink"><b>Design Philosophy</b></a>,
                     find me on <a href="https://www.linkedin.com/in/qiu-william-jin-405929168/" target="_blank" class="alink"><b>Linkedin</b></a>,
                     or
@@ -173,91 +184,7 @@
 		</span>
 </div>
 <!-- Steps -->
-<div class="steps landing__section">
-    <!--<div class="container">
-        <h2>Projects</h2>
-        <p>Here's who we can think of, but surely creative people will surprise us.</p>
-    </div>-->
-    <div class="container">
-        <div class="steps__inner">
-            <div class="step">
-                <a href="EZChat.html">
-                    <div class="step__media">
-                        <img src="./images/EZChat/1.jpg" width="90%" class="shadow" >
-                    </div>
-                </a>
-                <h4>EZchat</h4>
-                <p >Product Design / Independent Project</p>
-            </div>
-            <div class="step">
 
-                <a href="IBM.html">
-                    <div class="step__media">
-
-                        <img src="./images/IBM/0.jpg" width="90%" class="shadow" >
-                    </div>
-                </a>
-                <h4>IBM</h4>
-                <p >Product Design Internship</p>
-            </div>
-
-        </div>
-    </div>
-</div>
-<div >
-
-    <div class="container">
-        <div class="steps__inner">
-
-            <div class="step">
-                <a href="12306.html">
-                    <div class="step__media">
-                        <img src="./images/12306/AppleDevices2.jpg" width="90%" class="shadow" >
-                    </div>
-                </a>
-                <h4>Design Challenge:<br>
-                    Redesign of 12306.cn & its App in 1 Day</h4>
-                <p >UI/UX Design / Independent Project</p>
-            </div>
-
-            <div class="step">
-                <a href="Pianooooo.html">
-                    <div class="step__media">
-                        <img src="./images/Pianooooo/0.0.jpg" width="90%" class="shadow" >
-                    </div>
-                </a>
-                <h4>Pianooooo</h4>
-                <p >Service & UX Design / Independent Project</p>
-            </div>
-        </div></div>
-
-<div class="steps landing__section" >
-
-    <div class="container">
-        <div class="steps__inner">
-
-
-            <div class="step">
-                <a href="Carlette.html">
-                <div class="step__media">
-                    <img src="./images/Carlette/0.jpg" width="90%" class="shadow" >
-                </div>
-                </a>
-                <h4>Carlette</h4>
-                <p >Interaction Design / Independent Project</p>
-            </div>
-            <div class="step">
-                <a href="Uteeth.html">
-                <div class="step__media">
-                    <img src="./images/Uteeth/0.0.jpg" width="90%" class="shadow" >
-                </div>
-                </a>
-                <h4>Uteeth</h4>
-                <p >Product Design / Independent Project</p>
-            </div>
-        </div>
-    </div>
-</div>
 <!--<div class="expanded landing__section">
     <div class="container">
         <div class="expanded__inner">
@@ -272,7 +199,7 @@
     </div>
 </div>
 -->
-<!--    <div class="expanded landing__section" style="background-color: #fafafa; ">
+   <div class="expanded landing__section" style="background-color: #fafafa; ">
         <div class="container">
             <div class="expanded__inner">
 
@@ -287,24 +214,9 @@
             </div>
         </div>
     </div>
-<div class="expanded landing__section" style="background-color: #fafafa; ">
+<div class="expanded landing__section" style="background-image: linear-gradient(to bottom right, #4796E1, #225DC0); ">
     <div class="container">
-        <div class="expanded__inner">
 
-            <div class="expanded__content">
-                <h1 class="expanded__title" >EZChat</h1>
-                <P class="subtitle">Independent Project, 2018 - 2019</P>
-                <p class="expanded__text">A relation-based chatting tool for People
-                    who value boundaries in their interpersonal relationships.</div>
-            <div class="expanded__media">
-                <img src="./images/EZChat/1.jpg" >
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="expanded landing__section" style="background-image: linear-gradient(to bottom right, #4796E1, #225DC0); ">
-        <div class="container">
-            <a href="IBM.html">
             <div class="expanded__inner">
 
 
@@ -313,14 +225,34 @@
                     <P class="subtitle" style="color: rgba(255,255,255,.5);">Feb - Jun 2019</P>
                     <p class="expanded__text" style="color: #ffffff;">Several projects during my internship in IBM.</div>
                 <div class="expanded__media">
-                    <img src="./images/IBM/0.png" width="80%" >
+                    <a href="IBM.html">
+                    <img class = 'landing_img' src="./images/IBM/0.png" width="80%" >
+                    </a>
                 </div>
 
             </div>
-            </a>
+
+    </div>
+</div>
+<div class="expanded landing__section" style="background-image: linear-gradient(to bottom right, #94D9B3, #22BA70) ">
+    <div class="container">
+        <div class="expanded__inner">
+
+            <div class="expanded__content">
+                <h1 class="expanded__title">EZChat</h1>
+                <P class="subtitle">Independent Project, 2018 - 2019</P>
+                <p class="expanded__text">A relation-based chatting tool for People
+                    who value boundaries in their interpersonal relationships.</div>
+            <div class="expanded__media">
+                <a href="EZChat.html">
+                <img class="landing_img" src="./images/EZChat/0.png" width="60%" >
+                </a>
+            </div>
         </div>
     </div>
-    -->
+</div>
+
+
 
 <div class="footer footer--dark">
     <div class="container">
