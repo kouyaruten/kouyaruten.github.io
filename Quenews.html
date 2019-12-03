@@ -131,6 +131,7 @@
             font-weight: bold;
             color: #303030;
             letter-spacing: .5px;
+            max-width: 500px;
         }
         .landing_img{
             transition: .3s ease-in-out;
@@ -139,6 +140,22 @@
 
             transform: scale(1.1);
 
+        }
+        .landing_middle{
+            text-align: center;
+            background-color: #f7f7f7;
+            padding: 50px;
+            padding-top: 100px;
+
+        }
+        .middle_title{
+            font-size: 50px;
+            font-weight: bold;
+            color: #303030;
+            letter-spacing: .5px;
+        }
+        .larger_text{
+            font-size: 20px;
         }
 
 
@@ -155,68 +172,64 @@
             <nav class="navbar__menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Top</a></li>
                 </ul>
             </nav>
             <div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
         </div>
     </div>
 </div>
-<div style="background-color: #6c63ff; height: 70px"></div>
+<div style="background-color: #5654CD; height: 70px"></div>
 <div class="expanded landing__section" style="background-color: #fff">
     <div class="container">
         <div class="expanded__inner">
             <div class="expanded__content">
-                <h1 style="margin-top: 100px; font-size: 50px;   color: #303030; letter-spacing: .5px">
-                    <b>Hi, I'm William.</b> I design (almost) everything.</h1>
-                <p style="font-size: 20px; font-weight: lighter; ">I'm passionate about creating great products by combining ux, business and technology.
-                    You can view my <a href="CustomizedDesign.html" class="alink"><b>Design Philosophy</b></a>,
-                    find me on <a href="https://www.linkedin.com/in/qiu-william-jin-405929168/" target="_blank" class="alink"><b>Linkedin</b></a>,
-                    or
-                    just send me an <a target="_blank" href="mailto:qiuj@andrew.cmu.edu" class="alink" ><b>Email</b></a>.</p>
-                <a target="_blank" href="./pdfs/resume.pdf" class="resume button button__primary" style="letter-spacing: 1px">My Resume</a><br>
-            </div>
+                <h1 style="margin-top: 100px; font-size: 50px;   color: #303030;  width: 110%">
+                    <b style="color: #5654CD">Quenews</b> is a queue-based news app for commuters.</h1>
+                <p class="subtitle">Inspired by the pain points of commuters, my friend Erin and me designed Quenews together.<br>
+                My role: solution, UI design, prototyping.</P>
+                <img src="images/Quenews/logo.png" width="20%">
+                </div>
         </div>
     </div>
 </div>
+
 
 <div class="hero__sub" style="margin-top: -50px">
 		<span id="scrollToNext" >
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor"  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
 		</span>
 </div>
-<!-- Steps -->
 
-<!--<div class="expanded landing__section">
-    <div class="container">
-        <div class="expanded__inner">
-            <div class="expanded__media">
-                <img src="./images/undraw_browser.svg" class="expanded__image">
-            </div>
-            <div class="expanded__content">
-                <h2 class="expanded__title">Natural styling without a learning curve</h2>
-                <p class="expanded__text">Evie brings you the pages you'll need and the structure to create your own, with almost nothing to learn. It is minimal and mostly styles plain elements. There are only a few classes you'll need to know but nothing to disrupt your preferred coding style.</p>
-            </div>
-        </div>
-    </div>
+<div class="landing_middle">
+        <h1 class="middle_title">Problems</h1>
+        <p class="larger_text">"I don't want to / it's not easy for me to take out my cell phone when commuting."<br><br>
+            "I wanna send emails or browse social media while listening to the news.
+            <br>It's inconvenient to switch
+            between the news app and other apps. "<br><br>
+        "There's no WiFi when commuting."<br><br>
+        "I wanted to know different media's perspectives about a piece of news."<br><br>
+        "I only listen to sports news."</p>
+
 </div>
--->
-   <div class="expanded landing__section" style="background-color: #fafafa; ">
+
+<div class="expanded landing__section" style="background-color: #ffffff; ">
         <div class="container">
             <div class="expanded__inner">
 
                 <div class="expanded__content">
-                    <h1 class="expanded__title" >Quenews</h1>
-                    <P class="subtitle">Group Project (2 people), 2019 - Still under developing :)</P>
-                    <p class="expanded__text">A queue-based news app for commuting people.
-                        </div>
+                    <h1 class="expanded__title" >Solutions</h1>
+
+                    <p class="larger_text">- Queue:
+                    <br>
+                    Recommendation
+                </div>
                 <div class="expanded__media">
-
-                    <img class="landing_img" src="./images/Quenews/0.png" width="60%" >
-
+                    <img class="landing_img" src="./images/EZChat/1.jpg" >
                 </div>
             </div>
         </div>
-    </div>
+</div>
 <div class="expanded landing__section" style="background-image: linear-gradient(to bottom right, #4796E1, #225DC0); ">
     <div class="container">
 
@@ -224,12 +237,12 @@
 
 
                 <div class="expanded__content">
-                    <h1 class="expanded__title" style="color: #ffffff;">IBM Product Design Intern</h1>
+                    <h1 class="expanded__title" style="color: #ffffff;">App Design</h1>
                     <P class="subtitle" style="color: rgba(255,255,255,.5);">Feb - Jun 2019</P>
                     <p class="expanded__text" style="color: #ffffff;">Several projects during my internship in IBM.</div>
                 <div class="expanded__media">
                     <a href="IBM.html">
-                    <img class = 'landing_img' src="./images/IBM/0.png" width="80%" style="margin-top: 150px; margin-bottom: 150px" >
+                    <img class = 'landing_img' src="./images/IBM/0.png" width="80%" >
                     </a>
                 </div>
 
