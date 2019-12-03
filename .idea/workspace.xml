@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd426c34-d734-4d99-8a11-2dc711943780" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EZChat.html" beforeDir="false" afterPath="$PROJECT_DIR$/EZChat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IBM.html" beforeDir="false" afterPath="$PROJECT_DIR$/IBM.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pianooooo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pianooooo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index_refine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Quenews.html" beforeDir="false" afterPath="$PROJECT_DIR$/Quenews.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Quenews.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Quenews.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Quenews.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="239" column="82" selection-start-line="239" selection-start-column="82" selection-end-line="239" selection-end-column="82" />
+            <state relative-caret-position="530">
+              <caret line="232" column="38" selection-start-line="232" selection-start-column="38" selection-end-line="232" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -109,7 +105,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pianooooo.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Pianooooo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Pianooooo.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2398">
@@ -195,11 +191,11 @@
         <option value="$PROJECT_DIR$/DesignTrend.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/Quenews.html" />
         <option value="$PROJECT_DIR$/IBM.html" />
         <option value="$PROJECT_DIR$/index_refine.html" />
         <option value="$PROJECT_DIR$/EZChat.html" />
         <option value="$PROJECT_DIR$/Pianooooo.html" />
+        <option value="$PROJECT_DIR$/Quenews.html" />
       </list>
     </option>
   </component>
@@ -272,26 +268,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index_refine.html">
-    <configuration name="CustomizedDesign.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/williamj-in.github.io/CustomizedDesign.html" />
+  <component name="RunManager" selected="JavaScript Debug.Quenews.html">
     <configuration name="DesignTrend.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/williamj-in.github.io/DesignTrend.html" />
     <configuration name="IBM.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/williamj-in.github.io/IBM.html" />
+    <configuration name="Quenews.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/williamj-in.github.io/Quenews.html" />
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/williamj-in.github.io/index.html" />
     <configuration name="index_refine.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/williamj-in.github.io/index_refine.html" />
     <list>
       <item itemvalue="JavaScript Debug.index.html" />
-      <item itemvalue="JavaScript Debug.CustomizedDesign.html" />
       <item itemvalue="JavaScript Debug.IBM.html" />
       <item itemvalue="JavaScript Debug.DesignTrend.html" />
       <item itemvalue="JavaScript Debug.index_refine.html" />
+      <item itemvalue="JavaScript Debug.Quenews.html" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.Quenews.html" />
         <item itemvalue="JavaScript Debug.index_refine.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.DesignTrend.html" />
         <item itemvalue="JavaScript Debug.IBM.html" />
-        <item itemvalue="JavaScript Debug.CustomizedDesign.html" />
       </list>
     </recent_temporary>
   </component>
@@ -334,12 +330,12 @@
       <workItem from="1572814750699" duration="118000" />
       <workItem from="1573069055434" duration="1672000" />
       <workItem from="1574873706375" duration="1982000" />
-      <workItem from="1575057226061" duration="11359000" />
+      <workItem from="1575057226061" duration="12823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59740000" />
+    <option name="totallyTimeSpent" value="61204000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -371,13 +367,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/12306.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2728">
-          <caret line="124" column="55" selection-start-line="124" selection-start-column="55" selection-end-line="124" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3256">
@@ -712,20 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Quenews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="239" column="82" selection-start-line="239" selection-start-column="82" selection-end-line="239" selection-end-column="82" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index_refine.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -774,6 +749,23 @@
             <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#10354#10360#1" expanded="true" />
             <element signature="e#10787#10793#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/Quenews/0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Quenews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="232" column="38" selection-start-line="232" selection-start-column="38" selection-end-line="232" selection-end-column="38" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
