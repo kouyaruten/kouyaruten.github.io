@@ -157,6 +157,37 @@
         .larger_text{
             font-size: 20px;
         }
+        .img {
+
+            cursor: zoom-in;
+        }
+
+        .window {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 50%;
+            top: 50%;
+            text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            background-color: rgba(30,30,30,0.8);
+            -webkit-transition: all 0.3s;
+            -webkit-transform: translateX(-50%) translateY(-50%) scale(0.6);
+        }
+
+        .window img {
+            height:88%;
+            margin-top:5.5%;
+            align-content: center;
+
+        }
+        .window-show {
+            visibility: visible;
+            opacity: 1;
+
+            -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+        }
 
 
 
@@ -183,13 +214,19 @@
 <div class="expanded landing__section" style="background-color: #fff">
     <div class="container">
         <div class="expanded__inner">
-            <div class="expanded__content">
+            <div class="expanded__content" style="width: 60%">
                 <h1 style="margin-top: 100px; font-size: 50px;   color: #303030;  width: 110%">
                     <b style="color: #5654CD">Quenews</b> is a queue-based news app for commuters.</h1>
                 <p class="subtitle">Inspired by the pain points of commuters, my friend Erin and me designed Quenews together.<br>
-                My role: solution, UI design, prototyping.</P>
+                My role: Solution, Information Architecture, UI design, prototyping.</P>
                 <img src="images/Quenews/Logo.png" width="20%">
-                </div>
+
+
+            </div>
+
+
+
+
         </div>
     </div>
 </div>
@@ -200,6 +237,22 @@
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor"  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
 		</span>
 </div>
+<div class="expanded landing__section" style="background-color: #303030">
+    <div class="container">
+        <div class="expanded__inner">
+
+            <div class="expanded__content" style="width: 40%">
+                <h1 class="expanded__title" style="color: #8F8DE8">Prototype</h1>
+            </div>
+            <div class="expanded__media">
+                <div style="box-shadow: box-shadow: 0px 0px 20px #c0c0c0">
+                <iframe width="889" height="500" style="margin-left: -50%" src="https://www.youtube.com/embed/Cj2JDOmxvvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="landing_middle">
         <h1 class="middle_title">Problems</h1>
@@ -303,9 +356,9 @@
                 </p>
             </div>
             <div class="expanded__media" >
-                <img src="./images/Quenews/Article_Modal.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: -40%">
-                <img src="./images/Quenews/Article_Modal_2.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: 3%">
-                <img src="./images/Quenews/Article_Modal_3.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: 3%">
+                <img  class="img" src="./images/Quenews/Article_Modal.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: -40%">
+                <img  class="img" src="./images/Quenews/Article_Modal_2.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: 3%">
+                <img  class="img" src="./images/Quenews/Article_Modal_3.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: 3%">
             </div>
         </div>
     </div>
@@ -395,6 +448,31 @@
         </div>
     </div>
 </div>
+<div class="window" id="window">
+    <img src="" id="enlargeimg">
+</div>
 <script src='js/app.min.js'></script>
+<script>
+    window.onload = function () {
+        var imgs = document.getElementsByClassName('img')
+        var window = document.getElementById('window')
+        var enlargeimg = document.getElementById('enlargeimg')
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].onclick = function () {
+                var src = this.src
+                initWindowWithIMGAndShow(src)
+            }
+            var initWindowWithIMGAndShow = function (src) {
+                enlargeimg.src = src
+                window.classList.add('window-show')
+                $('nav').hide()
+            }
+        }
+        window.addEventListener('click', function () {
+            window.classList.remove('window-show')
+            $('nav').show()
+        }, false)
+    }
+</script>
 </body>
 </html>
