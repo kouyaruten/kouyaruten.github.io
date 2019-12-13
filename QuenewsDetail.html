@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head> <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"><meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>William Jin | Design Everything</title>
+	<link rel='stylesheet' href='css/style.min.css' />
+
+	<style>
+		.shadow{
+
+			transition: all .3s;
+		}
+		.shadow:hover{
+			-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+			-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+			box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+		}
+		.overlay{
+			position: absolute;
+
+			width: auto;
+
+
+			background-color: rgba(255, 255, 255, .95);
+			opacity: 0;
+			-webkit-transition: .3s all;
+			-o-transition: .3s all;
+			transition: .3s all
+		}
+		.overlay:hover{
+			opacity: 1;
+		}
+		.step{
+			width: 33%;
+		}
+		.hero{
+			background-image: url(images/evie_default_bg.jpeg);
+		}
+		.navbar__logo{
+			color: #303030;
+
+		}
+		.navbar{
+			background-color: #fff;
+		}
+		.navbar__menu {
+			-webkit-text-fill-color: #303030;
+
+
+		}
+		.navbar__inner{
+			color: #303030
+		}
+		.navbar__menu a {
+			color: #303030
+		}
+		.navbar__menu a:after {
+			display: block;
+			content: "";
+			border-bottom: 2px solid #707070;
+			-webkit-transform: scaleX(0);
+			-ms-transform: scaleX(0);
+			transform: scaleX(0);
+			-webkit-transition: -webkit-transform .25s ease-in-out;
+			transition: -webkit-transform .25s ease-in-out;
+			transition: transform .25s ease-in-out;
+			transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out
+		}
+		.expanded__content{
+			width: 60%;
+		}
+
+		.landing__section:nth-child(odd) {
+			background-color: #f7f7f7;
+			border-top: 0px solid #eee;
+			border-bottom: 0px solid #eee
+
+		}
+		.landing__section{
+			background-color: #f7f7f7;
+		}
+		.img {
+
+			cursor: zoom-in;
+		}
+
+		.window {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			left: 50%;
+			top: 50%;
+			text-align: center;
+			visibility: hidden;
+			opacity: 0;
+			background-color: rgba(30,30,30,0.8);
+			-webkit-transition: all 0.3s;
+			-webkit-transform: translateX(-50%) translateY(-50%) scale(0.6);
+		}
+
+		.window img {
+			height:88%;
+			margin-top:5.5%;
+			align-content: center;
+
+		}
+
+		.window-show {
+			visibility: visible;
+			opacity: 1;
+
+			-webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+		}
+		.top{
+			transition: .3s;
+		}
+		.top:hover{
+			text-decoration: underline;
+		}
+		.title{
+			font-size: 50px;
+			font-weight: bold;
+			color: #303030;
+			letter-spacing: .5px;
+		}
+		.title:hover{
+			text-decoration: underline;
+		}
+		.text-container{
+			max-width: 800px;
+			width: 100%;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body style="font-family: 'Roboto', sans-serif;">
+	<!-- navbar -->
+	<div class="navbar">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="index.html" class="navbar__logo">William</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="#">Top</a></li>
+						<li><a href="index.html">Home</a></li>
+
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<div style="background-color: #5654CD; height: 70px"></div>
+	<!-- Page content -->
+	<div class="app">
+		<div class="container">
+			<div class="app__inner">
+				<div class="app__menu">
+					<ul class="vMenu" style="position: fixed">
+						<li><a onclick="myFunction(2)" style="cursor: pointer" >Background</a></li>
+						<li><a onclick="myFunction(1)" style="cursor: pointer"  >User Research</a></li>
+
+						<li><a onclick="myFunction(3)" style="cursor: pointer">Competitive Analysis</a></li>
+						<li><a onclick="myFunction(5)" style="cursor: pointer"  >Insight</a></li>
+
+						<li><a onclick="myFunction(4)" style="cursor: pointer">App Design</a></li>
+					</ul>
+				</div>
+				<div class="app__main">
+					<div class="text-container">
+
+						<a href="Quenews.html"  style="color: #5654CD" class="title"><h1>< Quenews</a> is a queue-based news app
+						for commuters.</h1>
+
+						<P>Product Design / Group Project (group of 2) <br> My Role: Solution, Information Architecture, UI Design, Prototyping</P>
+						<img class="img" src="images/Quenews/Logo.png" style="width: 20%; margin-left: 0%; margin-top: 40px">
+
+
+						<h1 id="2" style="margin-top: 80px">Background</h1>
+						<P>Commuters like browsing news. However, there are lots of pain points using existing news apps when commuting
+							and there isn't a news app designed specially for commuters. Inspired by the pain points of commuters,
+							my friend Erin and me designed Quenews together.</P>
+
+						<img class="img" src="images/Quenews/Background1.jpg" style="width: 100%; margin-left: 0%">
+
+
+						<h1 id="1" style="margin-top: 80px">User Research</h1>
+						<img class="img" src="images/Quenews/subway.png" style="width: 60%; margin-left: 20%">
+
+						<h3>Interview</h3>
+						<P>What do commuters want?</P>
+						<img class="img" src="images/Quenews/Interview.jpg" style="width: 100%; margin-left: 0%">
+						<h3>Persona</h3>
+						<img class="img" src="images/Quenews/Persona1.png">
+						<img class="img" src="images/Quenews/Persona2.png">
+
+
+
+
+
+
+
+						<h1 id="3" style="margin-top: 80px">Competitive Analysis</h1>
+						<P>How do existing apps provide news to their users?</P>
+						<img class="img" src="images/Quenews/Competitive%20Analysis.jpg">
+						
+
+						<h1 id="5" style="margin-top: 80px">Insight</h1>
+						<P>The existing problems.</P>
+						<img class="img" src="images/Quenews/Insight.png">
+
+
+						<h1 id="4" style="margin-top: 80px">App Design</h1>
+						<h3>Information Architecture</h3>
+						<img class="img" src="images/Quenews/InfoArch.png" >
+						<h3>User Flow</h3>
+						<img class="img" src="images/Quenews/WorkFlow.png" style="margin-left: 25%">
+						<h3>Wireframe</h3>
+						<img class="img" src="images/Quenews/Wireframe/0.png" style=" width: 60%; margin-left: 20%; ">
+						<h3>UI Design</h3>
+						<h4>Queue</h4>
+						<P>Commuters can easily add a piece of news to their queue. In doing so, they don't have to frequently take out their cell phones or switch between apps, or to worry about WiFi. The only thing is to add several pieces of news to the queue, and then enjoy the journey!</P>
+						<h4>Recommendation</h4>
+						<P>The recommendation algorithm is also based on the queue. Commuters can add a new piece of news to their queues according to their listening history. Also, if the current queue is finished, the system will automatically choose a piece of news to play.</P>
+						<h4>A never-ending listening experience</h4>
+						<P>Quenews can provide a never-ending listening experience to its users - they can enjoy the news the like whenever they open the app.</P>
+						<img class="img" src="images/Quenews/Gifs/Queuenews.gif" style=" width: 40%; margin-left: 30%; box-shadow: 0px 0px 20px #c0c0c0;">
+
+						<h4 style="margin-top: 100px">Discover Page: Play now/Add to Top/Add to Bottom</h4>
+						<P>Users can browse news at Discover Page and add them to the queue. They have three choices - play it now, and add it to the top/bottom of the queue. The three major actions are represented by a play button and two arrow buttons respectively.</P>
+						<h4>Play progress</h4>
+						<P>The current time/total time of a piece of news are represented on the slider.</P>
+						<img class="img" src="images/Quenews/Discover_Mockup.png" style=" width: 40%; margin-left: 30%; ">
+
+						<h4 style="margin-top: 100px">Card View: Better for commuters</h4>
+						<P>Sometimes it's difficult for commuters to interact precisely with the app (e.g. when they are walking or on a bus). Thus, we added a card view as well as some gestures to better illustrate the information and refine the interaction. They can tap the play button to play it now, swipe up/down to add it to the top/bottom of the queue, and swipe left/right to switch between different news.</P>
+						<img class="img" src="images/Quenews/Gifs/Queuenews%203.gif" style=" width: 40%; margin-left: 30%; box-shadow: 0px 0px 20px #c0c0c0;">
+
+						<h4 style="margin-top: 100px">Article & Feedback</h4>
+						<P>Users can view the article of a piece of news. For commuters, viewing articles is a less-used function, which is why we used a modal window to show the articles as a temporary status.</P>
+						<P>We also made a balance between the forms of feedback. For one thing, user's feedback about an article could be useful for data analysis and recommendation. On the other hand, however, more and more news app tend to close their comment function to avoid extreme opinions. Therefore, we let the users choose one of the Emojis after they read an article.</P>
+						<img  class="img" src="./images/Quenews/Article_Modal.png" width="30%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: 0%">
+						<img  class="img" src="./images/Quenews/Article_Modal_2.png" width="30%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: 3%">
+						<img  class="img" src="./images/Quenews/Article_Modal_3.png" width="30%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: 3%">
+
+						<h4 style="margin-top: 100px">Search</h4>
+						<P>We noticed that many users tend to listen to the news from same category. Some of them are sports fans,
+							while others want to know about different media's perspective about a politic issue. As a result, we designed
+							a search bar and several categories for them to choose.</P>
+						<img class="img" src="images/Quenews/Search_Mockup.png" style=" width: 40%; margin-left: 30%;">
+
+						<h4 style="margin-top: 100px">Profile</h4>
+						<P>In order to encourage commuters to get knowledge from the news, we designed a reward system. They can unlock different functions (e.g. customize the font and recommendation prefrences) with the more news they listen to.</P>
+						<img class="img" src="images/Quenews/Profile_Mockup.png" style=" width: 40%; margin-left: 30%;">
+
+
+						<h3 style="margin-top: 100px">HiFi Prototype</h3>
+						<iframe width="800" height="450"  src="https://www.youtube.com/embed/Cj2JDOmxvvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer footer--dark">
+		<div class="container">
+			<div class="footer__inner">
+				<a href="index.html" class="footer__textLogo">William Jin</a>
+				<div class="footer__data">
+					<div class="footer__data__item">
+						<div class="footer__row">
+							Email: qiuj@andrew.cmu.edu</div>
+						<div class="footer__row">
+						</div>
+					</div>
+					<!--
+                    <div class="footer__data__item">
+                        <div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
+                        </div>
+                    </div>
+                    <div class="footer__data__item">
+                    <div class="footer__row">
+                        <a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="./additional.html" class="footer__link">MIT license</a>
+                    </div>
+                    -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="window" id="window">
+		<img src="" id="enlargeimg">
+	</div>
+<script src='js/app.min.js'></script>
+	<script>function myFunction(n) {
+        var elmnt = document.getElementById(n);
+        elmnt.scrollIntoView();
+        window.scrollBy(0, -80);
+    }</script>
+	<script>
+        window.onload = function () {
+            var imgs = document.getElementsByClassName('img')
+            var window = document.getElementById('window')
+            var enlargeimg = document.getElementById('enlargeimg')
+            for (var i = 0; i < imgs.length; i++) {
+                imgs[i].onclick = function () {
+                    var src = this.src
+                    initWindowWithIMGAndShow(src)
+                }
+                var initWindowWithIMGAndShow = function (src) {
+                    enlargeimg.src = src
+                    window.classList.add('window-show')
+                    $('nav').hide()
+                }
+            }
+            window.addEventListener('click', function () {
+                window.classList.remove('window-show')
+                $('nav').show()
+            }, false)
+        }
+	</script>
+</body>
+</html>
