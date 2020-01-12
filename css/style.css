@@ -401,7 +401,7 @@ pre {
   font-size: 0.85rem;
   color: #111;
   width: min-content;
-  background: #f7f7f7;
+  background: #f5f6f7;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre;
@@ -518,7 +518,7 @@ input[type="email"], input[type="number"], input[type="search"], input[type="tex
   font-weight: 400;
   padding: 10pt 20pt;
   border-radius: 30px;
-  background-color: #f7f7f7;
+  background-color: #f5f6f7;
   margin-bottom: 1.4em;
   display: block; }
   input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
@@ -536,7 +536,7 @@ textarea {
   font-weight: 400;
   padding: 12pt 24pt;
   border-radius: 30px;
-  background-color: #f7f7f7;
+  background-color: #f5f6f7;
   margin-bottom: 1.4em;
   display: block;
   resize: none;
@@ -558,7 +558,7 @@ select {
   margin-bottom: 1.4em;
   display: block;
   border-radius: 30px;
-  background-color: #f7f7f7;
+  background-color: #f5f6f7;
   outline: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -726,7 +726,7 @@ select {
   padding: 24pt 0; }
 
 .landing__section:nth-child(odd) {
-  background-color: #f7f7f7;
+  background-color: #f5f6f7;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee; }
 
