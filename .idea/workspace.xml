@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd426c34-d734-4d99-8a11-2dc711943780" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Quenews.html" beforeDir="false" afterPath="$PROJECT_DIR$/Quenews.html" afterDir="false" />
-    </list>
+    <list default="true" id="cd426c34-d734-4d99-8a11-2dc711943780" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -50,8 +47,8 @@
       <file leaf-file-name="Quenews.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Quenews.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="431" column="80" lean-forward="true" selection-start-line="431" selection-start-column="80" selection-end-line="431" selection-end-column="80" />
+            <state relative-caret-position="458">
+              <caret line="432" column="93" selection-start-line="432" selection-start-column="93" selection-end-line="432" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -305,7 +302,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Quenews.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="Blank.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/williamj-in.github.io/Blank.html" />
     <configuration name="IBM.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/williamj-in.github.io/IBM.html" />
     <configuration name="QuenewsDetail.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/williamj-in.github.io/QuenewsDetail.html" />
@@ -320,8 +317,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.Quenews.html" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.Quenews.html" />
         <item itemvalue="JavaScript Debug.QuenewsDetail.html" />
         <item itemvalue="JavaScript Debug.IBM.html" />
         <item itemvalue="JavaScript Debug.Blank.html" />
@@ -379,12 +376,12 @@
       <workItem from="1578866298262" duration="2203000" />
       <workItem from="1578875764344" duration="224000" />
       <workItem from="1578877188329" duration="620000" />
-      <workItem from="1578878880246" duration="213000" />
+      <workItem from="1578878880246" duration="548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90143000" />
+    <option name="totallyTimeSpent" value="90478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -790,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Quenews.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="431" column="80" lean-forward="true" selection-start-line="431" selection-start-column="80" selection-end-line="431" selection-end-column="80" />
+        <state relative-caret-position="458">
+          <caret line="432" column="93" selection-start-line="432" selection-start-column="93" selection-end-line="432" selection-end-column="93" />
         </state>
       </provider>
     </entry>
