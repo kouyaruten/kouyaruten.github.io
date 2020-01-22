@@ -1,173 +1,236 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head> <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"><meta class="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>William Jin | Design Everything</title>
-	<link rel='stylesheet' href='css/style.min.css' />
-	<style>
-		.shadow{
+<html lang="en">
 
-			transition: all .3s;
-		}
-		.shadow:hover{
-			-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-			-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-			box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-		}
-		.overlay{
-			position: absolute;
-
-			width: auto;
-
-
-			background-color: rgba(255, 255, 255, .95);
-			opacity: 0;
-			-webkit-transition: .3s all;
-			-o-transition: .3s all;
-			transition: .3s all
-		}
-		.overlay:hover{
-			opacity: 1;
-		}
-		.step{
-			width: 33%;
-		}
-		.hero{
-			background-image: url(images/evie_default_bg.jpeg);
-		}
-		.navbar__logo{
-			color: #303030;
-
-		}
-		.navbar{
-			background-color: #fff;
-		}
-		.navbar__menu {
-			-webkit-text-fill-color: #303030;
-
-
-		}
-		.navbar__inner{
-			color: #303030
-		}
-		.navbar__menu a {
-			color: #303030
-		}
-		.navbar__menu a:after {
-			display: block;
-			content: "";
-			border-bottom: 2px solid #707070;
-			-webkit-transform: scaleX(0);
-			-ms-transform: scaleX(0);
-			transform: scaleX(0);
-			-webkit-transition: -webkit-transform .25s ease-in-out;
-			transition: -webkit-transform .25s ease-in-out;
-			transition: transform .25s ease-in-out;
-			transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out
-		}
-		.expanded__content{
-			width: 60%;
-		}
-
-		.landing__section:nth-child(odd) {
-			background-color: #f5f6f7;
-			border-top: 0px solid #eee;
-			border-bottom: 0px solid #eee
-
-		}
-		.landing__section{
-			background-color: #f5f6f7;
-		}
-
-
-
-	</style>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta class="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>William Jin | Design Everything</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <style>
+        .shadow {
+            transition: all 0.3s;
+        }
+        
+        .shadow:hover {
+            -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+        }
+        
+        .overlay {
+            position: absolute;
+            width: auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            opacity: 0;
+            -webkit-transition: 0.3s all;
+            -o-transition: 0.3s all;
+            transition: 0.3s all;
+        }
+        
+        .overlay:hover {
+            opacity: 1;
+        }
+        
+        .step {
+            width: 33%;
+        }
+        
+        .hero {
+            background-image: url(images/evie_default_bg.jpeg);
+        }
+        
+        .navbar__logo {
+            color: #303030;
+        }
+        
+        .navbar {
+            background-color: #fff;
+        }
+        
+        .navbar__menu {
+            -webkit-text-fill-color: #303030;
+        }
+        
+        .navbar__inner {
+            color: #303030;
+        }
+        
+        .navbar__menu a {
+            color: #303030;
+        }
+        
+        .navbar__menu a:after {
+            display: block;
+            content: "";
+            border-bottom: 2px solid #707070;
+            -webkit-transform: scaleX(0);
+            -ms-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: -webkit-transform 0.25s ease-in-out;
+            transition: -webkit-transform 0.25s ease-in-out;
+            transition: transform 0.25s ease-in-out;
+            transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+        }
+        
+        .expanded__content {
+            width: 60%;
+        }
+        
+        .landing__section:nth-child(odd) {
+            background-color: #f5f6f7;
+            border-top: 0px solid #eee;
+            border-bottom: 0px solid #eee;
+        }
+        
+        .landing__section {
+            background-color: #f5f6f7;
+        }
+    </style>
 </head>
+
 <body style="font-family: 'Roboto', sans-serif;">
-	<!-- navbar -->
-	<div class="navbar">
-		<nav class="nav__mobile"></nav>
-		<div class="container">
-			<div class="navbar__inner">
-				<a href="index.html" class="navbar__logo">William</a>
-				<nav class="navbar__menu">
-					<ul>
-						<li><a href="#">Top</a></li>
-						<li><a href="index.html">Home</a></li>
-
-					</ul>
-				</nav>
-				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
-			</div>
-		</div>
-	</div>
-	<div style="background-color: #6c63ff; height: 70px"></div>
-	<!-- Page content -->
-	<div class="app">
-		<div class="container">
-			<div class="app__inner">
-				<div class="app__menu">
-					<ul class="vMenu" style="position: fixed">
-						<li><a href="#"  >Project Brief</a></li>
-						<li><a href="#2" >Background</a></li>
-						<li><a href="#3">Inspiration</a></li>
-						<li><a href="#4">Design Concept</a></li>
-					</ul>
-				</div>
-				<div class="app__main">
-					<div class="text-container">
-						<h1 class="app__main__title">Golf Desk</h1>
-						<p style="color: #CB4D4D"><b>Reddot Award 2018: Winner</b></p>
-						<P>Product Design/ Group work(2 designers)/ Teammate: Wei Xinli(Shirley Wei)<br>
-						My role: Leader, Ideation, Form, Modelling, Rendering</P>
-						<h3>Project Brief</h3>
-						<p>
-							Golf Desk is a desk allowing users to clean it up easily - just like playing golf. There's nothing simpler than that - sweep the surface of the desk by hands, and those clutters will be swept into the hole on the desk.
-							Golf Desk also conveys its concept to users - design should be harmonious with our life. A good design should make life more convenient and easier, instead of bringing new problems.
-							<b>The form of Golf Desk is also an application of Affordance - a visual cue to indicate the proper way for a user to interact with an object (by Donald A. Norman).</b> The elegant hole on the desk could indicate to users that they should put something into it.
-						</p>
-						<img id="2" src="./images/Golf%20Desk/25.jpg" width="60%" style="margin-left: 20%" >
-						<h3 >Background Research: Anxiety & Desk</h3>
-						<P>According to a report released by University of Michigan, people staying in the office are prone to irritability. The clutters and files on the desk will produce a bad feeling in people's mind, which is also a cause of some relevant diseases, according to a latest research. The research also points out that cleaning up the desk is an effective way to relieve anxiety and stress.
-							<br><br>
-							67% of the people are living a sedentary lifestyle.<br>
-
-							40% of the people often feel irritable because of the paper, files and other clutters on the desk.<br>
-
-							83% of the people have seen colleagues get mad at the office.<br>
-
-							63% of the people have got mad at the office.
-
-						</P>
-						<img src="./images/Golf%20Desk/1.jpg" width="60%" style="margin-left: 20%" >
-						<img src="./images/Golf%20Desk/2.jpg" width="60%" style="margin-left: 20%" id="3">
-						<h3 id="3">Inspiration</h3>
-						<P>The color and shape of the hole on the desk is inspired by golf, in order to encourage people to release their stress when tidying the desk - just like playing golf.</P>
-						<img src="./images/Golf%20Desk/5.jpg" width="60%" style="margin-left: 20%" id="4">
-						<h3 >Design Concept: Play Golf on Your Desk!</h3>
-						<P>Golf Desk is a desk allowing users to clean it up easily - just like playing golf. There's nothing simpler than that - sweep the surface of the desk by hands, and those clutters will be swept into the hole on the desk.
-
-							Life should be as simple as this desk, which has both functional and aesthetic value.
-							Golf Desk also conveys its concept to users - design should be harmonious with our life. A good design should make life more convenient and easier, instead of bringing new problems.</P>
-						<img src="./images/Golf%20Desk/3.jpg" width="60%" style="margin-left: 20%" >
-						<img src="./images/Golf%20Desk/4.jpg" width="60%" style="margin-left: 20%" >
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer footer--dark">
-		<div class="container">
-			<div class="footer__inner">
-				<a href="index.html" class="footer__textLogo">William Jin</a>
-				<div class="footer__data">
-					<div class="footer__data__item">
-						<div class="footer__row">
-							Email: qiuj@andrew.cmu.edu</div>
-						<div class="footer__row">
-						</div>
-					</div>
-					<!--
+    <!-- navbar -->
+    <div class="navbar">
+        <nav class="nav__mobile"></nav>
+        <div class="container">
+            <div class="navbar__inner">
+                <a href="index.html" class="navbar__logo">William</a>
+                <nav class="navbar__menu">
+                    <ul>
+                        <li><a href="#">Top</a></li>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar__menu-mob">
+                    <a href="" id="toggle"><svg
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  class=""
+                ></path></svg
+            ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: #6c63ff; height: 70px"></div>
+    <!-- Page content -->
+    <div class="app">
+        <div class="container">
+            <div class="app__inner">
+                <div class="app__menu">
+                    <ul class="vMenu" style="position: fixed">
+                        <li><a href="#">Project Brief</a></li>
+                        <li><a href="#2">Background</a></li>
+                        <li><a href="#3">Inspiration</a></li>
+                        <li><a href="#4">Design Concept</a></li>
+                    </ul>
+                </div>
+                <div class="app__main">
+                    <div class="text-container">
+                        <h1 class="app__main__title">Golf Desk</h1>
+                        <p style="color: #CB4D4D"><b>Reddot Award 2018: Winner</b></p>
+                        <p>
+                            Product Design/ Group work(2 designers)/ Teammate: Wei Xinli(Shirley Wei)<br /> My role: Leader, Ideation, Form, Modelling, Rendering
+                        </p>
+                        <h3>Project Brief</h3>
+                        <p>
+                            Golf Desk is a desk allowing users to clean it up easily - just like playing golf. There's nothing simpler than that - sweep the surface of the desk by hands, and those clutters will be swept into the hole on the desk. Golf Desk also conveys its concept
+                            to users - design should be harmonious with our life. A good design should make life more convenient and easier, instead of bringing new problems.
+                            <b>The form of Golf Desk is also an application of Affordance -
+                  a visual cue to indicate the proper way for a user to interact
+                  with an object (by Donald A. Norman).</b
+                >
+                The elegant hole on the desk could indicate to users that they
+                should put something into it.
+              </p>
+              <img
+                id="2"
+                src="./images/Golf%20Desk/25.jpg"
+                width="60%"
+                style="margin-left: 20%"
+              />
+              <h3>Background Research: Anxiety & Desk</h3>
+              <p>
+                According to a report released by University of Michigan, people
+                staying in the office are prone to irritability. The clutters
+                and files on the desk will produce a bad feeling in people's
+                mind, which is also a cause of some relevant diseases, according
+                to a latest research. The research also points out that cleaning
+                up the desk is an effective way to relieve anxiety and stress.
+                <br /><br />
+                67% of the people are living a sedentary lifestyle.<br />
+                40% of the people often feel irritable because of the paper,
+                files and other clutters on the desk.<br />
+                83% of the people have seen colleagues get mad at the office.<br />
+                63% of the people have got mad at the office.
+              </p>
+              <img
+                src="./images/Golf%20Desk/1.jpg"
+                width="60%"
+                style="margin-left: 20%"
+              />
+              <img
+                src="./images/Golf%20Desk/2.jpg"
+                width="60%"
+                style="margin-left: 20%"
+                id="3"
+              />
+              <h3 id="3">Inspiration</h3>
+              <p>
+                The color and shape of the hole on the desk is inspired by golf,
+                in order to encourage people to release their stress when
+                tidying the desk - just like playing golf.
+              </p>
+              <img
+                src="./images/Golf%20Desk/5.jpg"
+                width="60%"
+                style="margin-left: 20%"
+                id="4"
+              />
+              <h3>Design Concept: Play Golf on Your Desk!</h3>
+              <p>
+                Golf Desk is a desk allowing users to clean it up easily - just
+                like playing golf. There's nothing simpler than that - sweep the
+                surface of the desk by hands, and those clutters will be swept
+                into the hole on the desk. Life should be as simple as this
+                desk, which has both functional and aesthetic value. Golf Desk
+                also conveys its concept to users - design should be harmonious
+                with our life. A good design should make life more convenient
+                and easier, instead of bringing new problems.
+              </p>
+              <img
+                src="./images/Golf%20Desk/3.jpg"
+                width="60%"
+                style="margin-left: 20%"
+              />
+              <img
+                src="./images/Golf%20Desk/4.jpg"
+                width="60%"
+                style="margin-left: 20%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer footer--dark">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="index.html" class="footer__textLogo">William Jin</a>
+          <div class="footer__data">
+            <div class="footer__data__item">
+              <div class="footer__row">
+                Email: qiuj@andrew.cmu.edu
+              </div>
+              <div class="footer__row"></div>
+            </div>
+            <!--
                     <div class="footer__data__item">
                         <div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
                         </div>
@@ -186,10 +249,10 @@
                         <a href="./additional.html" class="footer__link">MIT license</a>
                     </div>
                     -->
-				</div>
-			</div>
-		</div>
-	</div>
-<script src='js/app.min.js'></script>
-</body>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
 </html>
