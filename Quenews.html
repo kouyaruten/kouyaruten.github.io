@@ -1,95 +1,98 @@
 <!DOCTYPE html>
 <html lang='en'>
-<head> <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <meta class="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>William Jin | Design Everything</title>
     <!-- Don't forget to add your metadata here -->
     <link rel='stylesheet' href='css/style.min.css' />
     <style>
-
-        .alink{
-
+        .alink {
             text-decoration: underline;
             transition: .3s;
-
-
         }
-        .alink:hover{
-            background-color:rgba(108, 99, 255, 0.3);
-
+        
+        .alink:hover {
+            background-color: rgba(108, 99, 255, 0.3);
         }
-        .alink:active{
-            background-color:rgba(108, 99, 255, 1);
+        
+        .alink:active {
+            background-color: rgba(108, 99, 255, 1);
         }
-        .shadow{
-
+        
+        .shadow {
             transition: all .1s;
         }
-        .shadow:hover{
-            -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-            -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-            box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+        
+        .shadow:hover {
+            -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
         }
-        .resume{
-
+        
+        .resume {
             transition: all .1s;
-
         }
-        .resume:hover{
+        
+        .resume:hover {
             -webkit-box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
             -moz-box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
             box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
         }
-        .resume:active{
+        
+        .resume:active {
             background-color: #362CCF;
-
         }
-        .overlay{
+        
+        .overlay {
             position: absolute;
-
             width: auto;
-
-
             background-color: rgba(255, 255, 255, .95);
             opacity: 0;
             -webkit-transition: .3s all;
             -o-transition: .3s all;
             transition: .3s all
         }
-        .overlay:hover{
+        
+        .overlay:hover {
             opacity: 1;
         }
-        .step{
+        
+        .step {
             width: 33%;
-
         }
         /*.step:hover{
             -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
             -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
             box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
         }*/
-        .hero{
+        
+        .hero {
             background-image: url(images/evie_default_bg.jpeg);
         }
-        .navbar__logo{
+        
+        .navbar__logo {
             color: #303030;
-
         }
-        .navbar{
+        
+        .navbar {
             background-color: #fff;
         }
+        
         .navbar__menu {
             -webkit-text-fill-color: #303030;
-
-
         }
-        .navbar__inner{
+        
+        .navbar__inner {
             color: #303030
         }
+        
         .navbar__menu a {
             color: #303030
         }
+        
         .navbar__menu a:after {
             display: block;
             content: "";
@@ -103,65 +106,67 @@
             transition: transform .25s ease-in-out;
             -webkit-transform .25s ease-in-out;
         }
-        .expanded__content{
+        
+        .expanded__content {
             width: 60%;
         }
-
+        
         .landing__section:nth-child(odd) {
             background-color: #f5f6f7;
             border-top: 0px solid #eee;
             border-bottom: 0px solid #eee
-
         }
-        .landing__section{
+        
+        .landing__section {
             background-color: #fafafa;
         }
-        .subtitle{
-
+        
+        .subtitle {
             font-size: smaller;
-
         }
-        .expanded__text{
+        
+        .expanded__text {
             max-width: 500px;
-
-
         }
-        .expanded__title{
+        
+        .expanded__title {
             font-size: 50px;
             font-weight: bold;
             color: #303030;
             letter-spacing: .5px;
             max-width: 500px;
         }
-        .landing_img{
+        
+        .landing_img {
             transition: .3s ease-in-out;
         }
-        .landing_img:hover{
-
+        
+        .landing_img:hover {
             transform: scale(1.1);
-
         }
-        .landing_middle{
+        
+        .landing_middle {
             text-align: center;
             background-color: #f5f6f7;
             padding: 50px;
             padding-top: 100px;
-
         }
-        .middle_title{
+        
+        .middle_title {
             font-size: 50px;
             font-weight: bold;
             color: #303030;
             letter-spacing: .5px;
         }
-        .larger_text{
+        
+        .larger_text {
             font-size: 20px;
         }
+        
         .img {
-
             cursor: zoom-in;
         }
-
+        
         .window {
             position: fixed;
             width: 100%;
@@ -171,98 +176,113 @@
             text-align: center;
             visibility: hidden;
             opacity: 0;
-            background-color: rgba(255,255,255,0.95);
-
+            background-color: rgba(255, 255, 255, 0.95);
             -webkit-transition: all 0.3s;
             -webkit-transform: translateX(-50%) translateY(-50%) scale(0.6);
-
         }
-
+        
         .window img {
-            height:88%;
-            margin-top:5.5%;
+            height: 88%;
+            margin-top: 5.5%;
             align-content: center;
-
         }
+        
         .window-show {
             visibility: visible;
             opacity: 1;
-
             -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
         }
-
-
-
     </style>
 </head>
+
 <body style="font-family: 'Roboto', sans-serif;">
 
-<div class="navbar navbar--extended">
-    <nav class="nav__mobile"></nav>
-    <div class="container">
-        <div class="navbar__inner">
-            <a href="index.html" class="navbar__logo" style="color: #303030">William</a>
-            <nav class="navbar__menu">
-                <ul>
+    <div class="navbar navbar--extended">
+        <nav class="nav__mobile"></nav>
+        <div class="container">
+            <div class="navbar__inner">
+                <a href="index.html" class="navbar__logo" style="color: #303030">William</a>
+                <nav class="navbar__menu">
+                    <ul>
 
-                    <li><a href="#">Top</a></li>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-            </nav>
-            <div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+                        <li><a href="#">Top</a></li>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+            </div>
         </div>
     </div>
-</div>
-<div style="background-color: #5654CD; height: 70px"></div>
-<div class="expanded landing__section" style="background-color: #fff">
-    <div class="container">
-        <div class="expanded__inner">
-            <div class="expanded__content" style="width: 60%">
-                <h1 style="margin-top: 100px; font-size: 50px;   color: #303030;  width: 110%">
-                    <b style="color: #5654CD">Quenews</b> is a queue-based news app for commuters.</h1>
-                <p class="subtitle">Inspired by the pain points of commuters, my friend Erin and I designed Quenews together.<br>
-                My role: Solution, Information Architecture, Work Flow, UI design, Prototyping.</P>
-                <img src="images/Quenews/Logo.png" width="20%">
+    <div style="background-color: #5654CD; height: 70px"></div>
+    <div class="expanded landing__section" style="background-color: #fff">
+        <div class="container">
+            <div class="expanded__inner">
+                <div class="expanded__content" style="width: 100%">
+                    <h1 class="middle_title" style="margin-top: 100px; font-size:60px;">
+                        <b style="color: #5654CD">Quenews</b><br> is a queue-based news app designed for <b style="color: #5654CD">commuters taking public transit.</b></h1>
+                    <p class="subtitle">Inspired by the pain points of commuters, my friend Erin and I designed Quenews together.<br> My role: Solution, Information Architecture, Work Flow, UI design, Prototyping.</P>
+                    <img src="images/Quenews/Logo.png" width="10%">
+
+
+                </div>
+
+
 
 
             </div>
-
-
-
-
         </div>
     </div>
-</div>
 
 
-<div class="hero__sub" style="margin-top: -50px">
-		<span id="scrollToNext" >
+    <div class="hero__sub" style="margin-top: -50px">
+        <span id="scrollToNext">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor"  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
 		</span>
-</div>
-<div class="expanded landing__section" style="background-color: #303030">
-    <div class="container">
-        <div class="expanded__inner">
+    </div>
+    <div class="expanded landing__section" style="background-color: #303030">
+        <div class="container">
+            <div class="expanded__inner">
 
-            <div class="expanded__content" style="width: 40%">
-                <h1 class="expanded__title" style="color: #8F8DE8">Prototype</h1>
-            </div>
-            <div class="expanded__media">
-                <div style="box-shadow: box-shadow: 0px 0px 20px #c0c0c0">
-                <iframe width="889" height="500" style="margin-left: -50%" src="https://www.youtube.com/embed/Cj2JDOmxvvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="expanded__content" style="width: 40%">
+                    <h1 class="expanded__title" style="color: #8F8DE8">Prototype</h1>
+                </div>
+                <div class="expanded__media">
+                    <div style="box-shadow: box-shadow: 0px 0px 20px #c0c0c0">
+                        <iframe width="889" height="500" style="margin-left: -50%" src="https://www.youtube.com/embed/Cj2JDOmxvvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
+    <div class="expanded landing__section">
+        <div class="container">
+            <div class="expanded__inner">
+                <div style="width: 100%">
+                    <h1 class="middle_title" style="">Context</h1>
 
-<div class="expanded landing__section">
-    <div class="container">
-        <div class="expanded__inner">
-            <div class="expanded__content" style="width: 40%">
-        <h1 class="middle_title" style="width: 200%">Problems & Insights</h1>
-        <p ><i>"I don't wanna waste commuting time. Listening to news makes me feel like learning something."<br><br>
+                    <img src="images/Quenews/Context.png" style="width: 80%; margin-left: 10%; margin-top: 100px">
+                    <h1 class="middle_title" style="margin-top: 100px;">Users: <b style="color: #5654CD">Commuters</b> who enjoy <b style="color: #5654CD">listening to the news</b> when taking <b style="color: #5654CD">public transit.</b></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="expanded landing__section">
+        <div class="container">
+            <div class="expanded__inner">
+                <div style="width: 100%">
+                    <h1 class="middle_title" style="margin-top: 100px;">Users: <b style="color: #5654CD">Commuters</b> who enjoy <b style="color: #5654CD">listening to the news</b> when taking <b style="color: #5654CD">public transit.</b></h1>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="expanded landing__section">
+        <div class="container">
+            <div class="expanded__inner">
+                <div class="expanded__content" style="width: 40%">
+                    <h1 class="middle_title" style="width: 200%">Existing Problems</h1>
+                    <p><i>"I don't wanna waste commuting time. Listening to news makes me feel like learning something."<br><br>
             "I don't want to / it's not easy for me to take out my cell phone when commuting."<br><br>
             "I wanna send emails or browse social media while listening to the news.
             It's inconvenient to switch between the news app and other apps. "<br><br>
@@ -270,260 +290,257 @@
         "I wanted to know different media's perspectives about a piece of news."<br><br>
             "I only listen to sports news."<br><br>
         "I want to talk about today's news with my collegues."</i></p>
-                <h3>Insight: Commuters love listening to the news, since they want to do something MEANINGFUL to avoid wasting their time.</h3>
+                    <h3></h3>
 
+                </div>
+
+                <img class="img" src="images/Quenews/Insight.png" style="width: 60%; margin-left: 5%; margin-top: 0px">
             </div>
-
-            <img class="img" src="images/Quenews/Insight.png" style="width: 60%; margin-left: 5%; margin-top: 0px">
-        </div></div>
-</div>
-
-<div class="expanded landing__section">
-    <div class="container">
-        <div class="expanded__inner">
-            <div class="expanded__content" style="width: 40%">
-                <h1 class="middle_title" style="width: 200%">User Journey: <br>Before</h1>
-                <h3>Janice: A student living in New York</h3>
-                <p >Janice is a student in New York. Traveling 5 miles to school is her daily routine. She has to walk for a while, and then take the bus, and the subway. It takes her abour
-                    an hour to commute and she just doesn't want to waste two hours in her everyday life.</P>
+        </div>
+    </div>
+    <div class="expanded landing__section">
+        <div class="container">
+            <div class="expanded__inner">
+                <div style="width: 100%">
+                    <h1 class="middle_title" style="margin-top: 100px;">Insight: <br>1. Commuters love listening to the news, since they want to do something <b style="color: #5654CD">MEANINGFUL</b> to avoid wasting their time.<br><br> 2. Commuters need better <b style="color: #5654CD">content, listening experience, and motivation</b>                        to listen to the news.</h1>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <img class="img" src="images/Quenews/JourneyMap-Before.jpg" style="width: 60%; margin-left: 5%; margin-top: 0px">
-        </div></div>
-</div>
+    <div class="expanded landing__section">
+        <div class="container">
+            <div class="expanded__inner">
+                <div class="expanded__content" style="width: 40%">
+                    <h1 class="middle_title" style="width: 200%">User Journey: <br>Before</h1>
+                    <h3>Janice: A student living in New York</h3>
+                    <p>Janice is a student in New York. Traveling 5 miles to school is her daily routine. She has to walk for a while, and then take the bus, and the subway. It takes her abour an hour to commute and she just doesn't want to waste two hours
+                        in her everyday life.</P>
+                </div>
 
-<div class="expanded landing__section">
-    <div class="container">
-        <div class="expanded__inner">
-            <div class="expanded__content" style="width: 50%">
-                <h1 class="middle_title" style="width: 200%">Solutions</h1>
-                <h3>Queue</h3>
-                <p >Commuters can add several pieces of news to the queue before going out, and then enjoy the journey!</p>
-                <h3>Gesture</h3>
-                <P>Commuters can use gestures to easily control the app.</P>
-                <h3>Reward System</h3>
-                <P>A reward system to help commuters feel fulfilling and listen to more news.</P>
-                <h3>Category & Recommendation</h3>
-                <P>Users can browse the news and get automatic recommendations by categories.</P>
-                <h3>Larger & Simpler View</h3>
-                <P>There should be a mode allowing users to easily browse the news.</P>
+                <img class="img" src="images/Quenews/JourneyMap-Before.jpg" style="width: 60%; margin-left: 5%; margin-top: 0px">
             </div>
+        </div>
+    </div>
 
-            <img class="img" src="images/Quenews/Solutions.jpg" style="width: 60%; margin-left: 0%; margin-top: 0px">
-        </div></div>
-</div>
+    <div class="expanded landing__section">
+        <div class="container">
+            <div class="expanded__inner">
+                <div class="expanded__content" style="width: 50%">
+                    <h1 class="middle_title" style="width: 200%">Solutions</h1>
+                    <h3>Queue</h3>
+                    <p>Commuters can add several pieces of news to the queue before going out, and then enjoy the journey!</p>
+                    <h3>Gesture</h3>
+                    <P>Commuters can use gestures to easily control the app.</P>
+                    <h3>Reward System</h3>
+                    <P>A reward system to help commuters feel fulfilling and listen to more news.</P>
+                    <h3>Category & Recommendation</h3>
+                    <P>Users can browse the news and get automatic recommendations by categories.</P>
+                    <h3>Larger & Simpler View</h3>
+                    <P>There should be a mode allowing users to easily browse the news.</P>
+                </div>
 
-<div class="expanded landing__section">
-    <div class="container">
-        <div class="expanded__inner">
-            <div  style="width: 100%">
-                <h1 class="middle_title" style="">User Journey: After</h1>
-
-                <img class="img" src="images/Quenews/JourneyMap-After.jpg" style="width: 100%; margin-left: 0%; margin-top: 0px">
-
-            </div></div>
-    </div></div>
-<div class="expanded landing__section">
-    <div class="container">
-        <div class="expanded__inner">
-            <div class="expanded__content" style="width: 100%">
-                <h1 class="middle_title" style="">Before vs. After</h1>
-                <p >Janice's commuting will be easier and more fulfilling with all of the solutions.</p>
-                <img class="img" src="images/Quenews/BeforevsAfter.jpg" style="width: 80%; margin-left: 10%">
+                <img class="img" src="images/Quenews/Solutions.jpg" style="width: 60%; margin-left: 0%; margin-top: 0px">
             </div>
-        </div></div>
-</div>
+        </div>
+    </div>
 
-
-
-
-<div class="expanded landing__section" style="background-color: #ffffff; ">
+    <div class="expanded landing__section" style="background-color: #ffffff; ">
         <div class="container">
             <div class="expanded__inner">
 
                 <div class="expanded__content">
-                    <h1 class="expanded__title"  >Quenews</h1>
+                    <h1 class="expanded__title">Quenews</h1>
 
-                    <h3 >Queue</h3>
-                    <p>Commuters can easily add a piece of news to their queue.
-                        In doing so, they don't have to frequently take out their cell phones or switch between apps, or to worry about WiFi. The
-                         only thing is to add several pieces of news to the queue, and then enjoy the journey! Besides, they can see the total remaining time and plan
-                    accordingly basing on the commuting time.
+                    <h3>Queue</h3>
+                    <p>Commuters can easily add a piece of news to their queue. In doing so, they don't have to frequently take out their cell phones or switch between apps, or to worry about WiFi. The only thing is to add several pieces of news to the queue,
+                        and then enjoy the journey! Besides, they can see the total remaining time and plan accordingly basing on the commuting time.
                         <h3>Recommendation</h3>
-                    <P>The recommendation algorithm is also based on the queue. Commuters can add a new piece of news to their queues according to their listening history.
-                     Also, if the current queue is finished, the system will automatically choose a piece of news to play.</P>
-                    <h3 >A never-ending listening experience</h3>
-                    <P>Quenews can provide a never-ending listening experience to its users - they can enjoy the news the like whenever
-                    they open the app.</P>
+                        <P>The recommendation algorithm is also based on the queue. Commuters can add a new piece of news to their queues according to their listening history. Also, if the current queue is finished, the system will automatically choose a
+                            piece of news to play.</P>
+                        <h3>A never-ending listening experience</h3>
+                        <P>Quenews can provide a never-ending listening experience to its users - they can enjoy the news the like whenever they open the app.</P>
                 </div>
                 <div class="expanded__media">
-                    <img src="./images/Quenews/Queue_Mockup.png" width="70%" >
+                    <img src="./images/Quenews/Queue_Mockup.png" width="70%">
                 </div>
             </div>
         </div>
-</div>
-<div class="expanded landing__section">
-    <div class="container">
-        <div class="expanded__inner">
+    </div>
+    <div class="expanded landing__section">
+        <div class="container">
+            <div class="expanded__inner">
 
-            <div class="expanded__content">
-                <h1 class="expanded__title" >Discover Page</h1>
+                <div class="expanded__content">
+                    <h1 class="expanded__title">Discover Page</h1>
 
-                <h3 >Play Now/Add to Top/Add to Bottom</h3>
-                <p>
-                    Users can browse news at Discover Page and add them to the queue.
-                    They have three choices - play it now, and add it to the top/bottom of the queue.
-                    The three major actions are represented by a play button and two arrow buttons respectively.
-                </p>
-                <h3>Play Progress</h3>
-                <P>
-                    The current time/total time of a piece of news are represented on the slider.
-                </P>
-            </div>
-            <div class="expanded__media">
-                <img src="./images/Quenews/Discover_Mockup.png" width="70%" >
+                    <h3>Three major needs: Play Now/Add to Top/Add to Bottom</h3>
+                    <p>
+                        Users can browse news at Discover Page and add them to the queue. They have three choices - play it now, and add it to the top/bottom of the queue. The three major actions are represented by a play button and two arrow buttons respectively.
+                    </p>
+                    <h3>Play Progress</h3>
+                    <P>
+                        The current time/total time of a piece of news are represented on the slider.
+                    </P>
+                </div>
+                <div class="expanded__media">
+                    <img src="./images/Quenews/Discover_Mockup.png" width="70%">
 
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="expanded landing__section" style="background-color: #ffffff">
-    <div class="container">
-        <div class="expanded__inner">
+    <div class="expanded landing__section" style="background-color: #ffffff">
+        <div class="container">
+            <div class="expanded__inner">
 
-            <div class="expanded__content">
-                <h1 class="expanded__title" >Card View: Better for commuters</h1>
+                <div class="expanded__content">
+                    <h1 class="expanded__title">Card View: Better for commuters</h1>
 
-                <h3 >Cards & Gestures</h3>
-                <p>
-                    Sometimes it's difficult for commuters to interact precisely with the app
-                    (e.g. when they are walking or on a bus). Thus, we added a card view as well as some gestures to better illustrate the information
-                    and refine the interaction. They can tap the play button to play it now, swipe up/down to add it to the top/bottom of the queue,
-                    and swipe left/right to switch between different news.
-                </p>
-            </div>
-            <div class="expanded__media">
-                <img src="./images/Quenews/Discover_Card_Mockup.png" width="70%" >
+                    <h3>Cards & Gestures</h3>
+                    <p>
+                        Sometimes it's difficult for commuters to interact precisely with the app (e.g. when they are walking or on a bus). Thus, we added a card view as well as some gestures to better illustrate the information and refine the interaction. They can tap the play
+                        button to play it now, swipe up/down to add it to the top/bottom of the queue, and swipe left/right to switch between different news.
+                    </p>
+                </div>
+                <div class="expanded__media">
+                    <img src="./images/Quenews/Discover_Card_Mockup.png" width="70%">
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="expanded landing__section" >
-    <div class="container">
-        <div class="expanded__inner">
+    <div class="expanded landing__section">
+        <div class="container">
+            <div class="expanded__inner">
 
-            <div class="expanded__content">
-                <h1 class="expanded__title" >Article</h1>
+                <div class="expanded__content">
+                    <h1 class="expanded__title">Article</h1>
 
 
-                <p style="width: 65%">
-                    Users can view the article of a piece of news. For commuters, viewing articles is a less-used function, which is why we
-                    used a modal window to show the articles as a temporary status.</p>
+                    <p style="width: 65%">
+                        Users can view the article of a piece of news. For commuters, viewing articles is a less-used function, which is why we used a modal window to show the articles as a temporary status.</p>
 
-                <h3>Feedback</h3>
-                <p style="width: 65%">
-                    We also made a balance between the forms of feedback. For one thing, user's feedback about an article could be
-                    useful for data analysis and recommendation. On the other hand, however, more and more news app tend to close their comment function
-                    to avoid extreme opinions. Therefore, we let the users choose one of the Emojis after they read an article.
-                </p>
-            </div>
-            <div class="expanded__media" >
-                <img  class="img" src="./images/Quenews/Article_Modal.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: -40%">
-                <img  class="img" src="./images/Quenews/Article_Modal_2.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: 3%">
-                <img  class="img" src="./images/Quenews/Article_Modal_3.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: 3%">
+                    <h3>Feedback</h3>
+                    <p style="width: 65%">
+                        We also made a balance between the forms of feedback. For one thing, user's feedback about an article could be useful for data analysis and recommendation. On the other hand, however, more and more news app tend to close their comment function to avoid
+                        extreme opinions. Therefore, we let the users choose one of the Emojis after they read an article.
+                    </p>
+                </div>
+                <div class="expanded__media">
+                    <img class="img" src="./images/Quenews/Article_Modal.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: -40%">
+                    <img class="img" src="./images/Quenews/Article_Modal_2.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: 3%">
+                    <img class="img" src="./images/Quenews/Article_Modal_3.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0; margin-left: 3%">
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="expanded landing__section" style="background-color: #ffffff">
-    <div class="container">
-        <div class="expanded__inner">
+    <div class="expanded landing__section" style="background-color: #ffffff">
+        <div class="container">
+            <div class="expanded__inner">
 
-            <div class="expanded__content">
-                <h1 class="expanded__title" >Search</h1>
+                <div class="expanded__content">
+                    <h1 class="expanded__title">Search</h1>
 
-                <h3 >Categories</h3>
-                <p>
-                    We noticed that many users tend to listen to the news from same category. Some of them are sports fans, while others
-                    want to know about different media's perspective about a politic issue. As a result, we designed a search bar and several
-                    categories for them to choose.
-                </p>
-            </div>
-            <div class="expanded__media">
-                <img src="./images/Quenews/Search_Mockup.png" width="70%" >
-            </div>
-        </div>
-    </div>
-</div>
-<div class="expanded landing__section" style="background-color: #f5f6f7">
-    <div class="container">
-        <div class="expanded__inner">
-
-            <div class="expanded__content">
-                <h1 class="expanded__title" >Profile</h1>
-
-                <h3 >A reward system</h3>
-                <p>
-                    In order to encourage commuters to get knowledge from the news, we designed a reward system. They can
-                    unlock different functions (e.g. customize the font and recommendation prefrences) with the more news
-                    they listen to.
-                </p>
-            </div>
-            <div class="expanded__media">
-                <img src="./images/Quenews/Profile_Mockup.png" width="70%" >
+                    <h3>Categories</h3>
+                    <p>
+                        We noticed that many users tend to listen to the news from same category. Some of them are sports fans, while others want to know about different media's perspective about a politic issue. As a result, we designed a search bar and several categories for
+                        them to choose.
+                    </p>
+                </div>
+                <div class="expanded__media">
+                    <img src="./images/Quenews/Search_Mockup.png" width="70%">
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="expanded landing__section" style="background-color: white">
-    <div class="container">
-        <div class="expanded__inner">
+    <div class="expanded landing__section" style="background-color: #f5f6f7">
+        <div class="container">
+            <div class="expanded__inner">
 
-            <div class="expanded__content">
-                <h1 class="expanded__title" >Iteration</h1>
+                <div class="expanded__content">
+                    <h1 class="expanded__title">Profile</h1>
 
-                <h3 >Dark mode & Bright mode</h3>
-                <p>
-                    At first, we wanted to design the app based on dark mode, since it's a trend in product design. However,
-                    considering the app is designed for commuters and usually the environment brightness is enough during commuting time (8-10am and 4-6pm),
-                    we discarded the dark mode.
-                </p>
-                <h3>Fonts</h3>
-                <P>Serif could create a sense of news, but sans-serif is clearer and more popular. Therefore, we only used serif on titles.</P>
-                <h3>Reflection</h3>
-                <P>Built on its core feature - the queue, Quenews is the project that I'm most proud of, since it solved a
-                real problem in an innovative and elegant way - that's what design should be.</P>
-            </div>
-            <div class="expanded__media">
-                <img class="img" src="./images/Quenews/Darkmode.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0;margin-left: -5%" >
-                <img class="img" src="./images/Quenews/Discover_Card.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0;margin-left: 5%" >
+                    <h3>A reward system</h3>
+                    <p>
+                        In order to encourage commuters to get knowledge from the news, we designed a reward system. They can unlock different functions (e.g. customize the font and recommendation prefrences) with the more news they listen to.
+                    </p>
+                </div>
+                <div class="expanded__media">
+                    <img src="./images/Quenews/Profile_Mockup.png" width="70%">
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="expanded landing__section">
+        <div class="container">
+            <div class="expanded__inner">
+                <div style="width: 100%">
+                    <h1 class="middle_title" style="">User Journey: After</h1>
+
+                    <img class="img" src="images/Quenews/JourneyMap-After.jpg" style="width: 100%; margin-left: 0%; margin-top: 0px">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="expanded landing__section">
+        <div class="container">
+            <div class="expanded__inner">
+                <div class="expanded__content" style="width: 100%">
+                    <h1 class="middle_title" style="">Before vs. After</h1>
+                    <p>Janice's commuting will be easier and more fulfilling with all of the solutions.</p>
+                    <img class="img" src="images/Quenews/BeforevsAfter.jpg" style="width: 80%; margin-left: 10%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="expanded landing__section" style="background-color: white">
+        <div class="container">
+            <div class="expanded__inner">
+
+                <div class="expanded__content">
+                    <h1 class="expanded__title">Iteration</h1>
+
+                    <h3>Dark mode & Bright mode</h3>
+                    <p>
+                        At first, we wanted to design the app based on dark mode, since it could provide better immersion and help users focus on the content. However, considering the app is designed for commuters (the most time is spent on listening) and usually the environment
+                        brightness is enough during commuting time (8-10am and 4-6pm), we discarded the dark mode.
+                    </p>
+                    <h3>Fonts</h3>
+                    <P>Serif could create a sense of news, but sans-serif is clearer. Therefore, we only used serif on titles.</P>
+                    <h3>Reflection</h3>
+                    <P>Built on its core feature - the queue, Quenews is the project that I'm most proud of, since it solved a real problem in an innovative and elegant way - that's what design should be.</P>
+                </div>
+                <div class="expanded__media">
+                    <img class="img" src="./images/Quenews/Darkmode.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0;margin-left: -5%">
+                    <img class="img" src="./images/Quenews/Discover_Card.png" width="40%" style="box-shadow: 0px 0px 20px #c0c0c0;margin-left: 5%">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
 
-<div class="landing_middle" style="background-color: #f5f6f7">
-    <h1 class="middle_title">Wanna learn more about our design process?</h1>
-    <a href="QuenewsDetail.html"  class="resume button button__primary" style="letter-spacing: 1px">Learn more</a><br>
+    <div class="landing_middle" style="background-color: #f5f6f7">
+        <h1 class="middle_title">Wanna learn more about our design process?</h1>
+        <a href="QuenewsDetail.html" class="resume button button__primary" style="letter-spacing: 1px">Learn more</a><br>
 
 
-</div>
-<div class="footer footer--dark">
-    <div class="container">
-        <div class="footer__inner">
-            <a href="index.html" class="footer__textLogo">William Jin</a>
-            <div class="footer__data">
-                <div class="footer__data__item">
-                    <div class="footer__row">
-                        Email: qiuj@andrew.cmu.edu</div>
-                    <div class="footer__row">
+    </div>
+    <div class="footer footer--dark">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="index.html" class="footer__textLogo">William Jin</a>
+                <div class="footer__data">
+                    <div class="footer__data__item">
+                        <div class="footer__row">
+                            Email: qiuj@andrew.cmu.edu</div>
+                        <div class="footer__row">
+                        </div>
                     </div>
-                </div>
-                <!--
+                    <!--
                 <div class="footer__data__item">
                     <div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
                     </div>
@@ -542,35 +559,36 @@
                     <a href="./additional.html" class="footer__link">MIT license</a>
                 </div>
                 -->
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="window" id="window">
-    <img src="" id="enlargeimg">
-</div>
-<script src='js/app.min.js'></script>
-<script>
-    window.onload = function () {
-        var imgs = document.getElementsByClassName('img')
-        var window = document.getElementById('window')
-        var enlargeimg = document.getElementById('enlargeimg')
-        for (var i = 0; i < imgs.length; i++) {
-            imgs[i].onclick = function () {
-                var src = this.src
-                initWindowWithIMGAndShow(src)
+    <div class="window" id="window">
+        <img src="" id="enlargeimg">
+    </div>
+    <script src='js/app.min.js'></script>
+    <script>
+        window.onload = function() {
+            var imgs = document.getElementsByClassName('img')
+            var window = document.getElementById('window')
+            var enlargeimg = document.getElementById('enlargeimg')
+            for (var i = 0; i < imgs.length; i++) {
+                imgs[i].onclick = function() {
+                    var src = this.src
+                    initWindowWithIMGAndShow(src)
+                }
+                var initWindowWithIMGAndShow = function(src) {
+                    enlargeimg.src = src
+                    window.classList.add('window-show')
+                    $('nav').hide()
+                }
             }
-            var initWindowWithIMGAndShow = function (src) {
-                enlargeimg.src = src
-                window.classList.add('window-show')
-                $('nav').hide()
-            }
+            window.addEventListener('click', function() {
+                window.classList.remove('window-show')
+                $('nav').show()
+            }, false)
         }
-        window.addEventListener('click', function () {
-            window.classList.remove('window-show')
-            $('nav').show()
-        }, false)
-    }
-</script>
+    </script>
 </body>
+
 </html>
