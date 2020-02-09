@@ -221,14 +221,15 @@
     <div class="expanded landing__section" style="background-color: #fff">
         <div class="container">
             <div class="expanded__inner">
-                <div class="expanded__content" style="width: 80%">
-                    <h1 style="margin-top: 100px; font-size: 50px;   color: #303030;  width: 110%">
-                        <b style="color: #9D2634">Campus+</b> is an experience system helping students to report building or equipment issues on campus.</h1>
+                <div class="expanded__content">
+                    <h1 class="middle_title" style="color: #303030;  width: 110%">
+                        <b style="color: #9D2634">Campus+</b> is an experience system helping students to report and track<b style="color: #9D2634"> public</b> building or equipment issues on campus.</h1>
                     <p class="subtitle">Campus+ is a part of Google's design exercise 2020 and designed especially for CMU students.</P>
-                    <img src="images/Campus+/HiFi/Logo.png" style="width: 15%;">
+
                 </div>
-                <div style="float: right; margin-top: 300px; margin-left: 0px;">
-                    <ul class="vMenu">
+                <div class="expanded__media">
+                    <img class="img" src="images/Campus+/HiFi/Tracking_MockUp.png" style="width: 60%;">
+                    <!-- <ul class="vMenu">
                         <li>
                             <a onclick="myFunction(1)" style="cursor: pointer">Research</a>
                         </li>
@@ -244,7 +245,7 @@
                         <li>
                             <a onclick="myFunction(5)" style="cursor: pointer">Design</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
@@ -255,7 +256,50 @@
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor"  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
 		</span>
     </div>
+    <div class="expanded landing__section" style="background-color: #fafafa;">
+        <div class="container">
+            <div class="expanded__inner">
+                <div class="expanded__content" style="width: 50%;">
+                    <h1 class="middle_title">Project Overview</h1>
+                    <p>Campus+ is an experience system designed to help students report and track public facility and building issues. It includes physical, mobile and desktop touch points. Basically, students can scan the QR code on the sticker near a facility
+                        (drinking fountain, vending machine, door, heater, etc.) to report and track an issue. The issue will be sent to facility administrators, allowing them to send work orders to facility members to fix the issue. This project takes
+                        CMU as an example, but can be also applied in other schools.</p>
+                    <ul class="vMenu" style="font-weight: bolder;">
+                        <li>
+                            <a onclick="myFunction(0)" style="cursor: pointer">Prototype</a>
+                        </li>
+                        <li>
+                            <a onclick="myFunction(1)" style="cursor: pointer">Research</a>
+                        </li>
+                        <li>
+                            <a onclick="myFunction(2)" style="cursor: pointer">Problems</a>
+                        </li>
+                        <li>
+                            <a onclick="myFunction(3)" style="cursor: pointer">Insights</a>
+                        </li>
+                        <li>
+                            <a onclick="myFunction(5)" style="cursor: pointer">Design</a>
+                        </li>
+                    </ul>
 
+                </div>
+                <div class="expanded__media" style="width: 65%;">
+                    <img class="img" src="images/Campus+/System.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="expanded landing__section" style="background-color: #f4f4f7;">
+        <div class="container">
+            <div class="expanded__inner">
+                <div id="0" class="expanded__content" style="width: 100%">
+                    <h1 class="middle_title">If you don't have time... Here's a prototype!</h1>
+                    <iframe width="100%" height="590px;" src="https://www.youtube.com/embed/Ljvyoisb96U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="expanded landing__section" style="background-color: #fafafa;">
         <div class="container">
             <div class="expanded__inner">
@@ -419,31 +463,36 @@
         </div>
     </div>
 
-    <!-- <div class="expanded landing__section">
+    <div class="expanded landing__section">
         <div class="container">
             <div class="expanded__inner">
 
                 <div class="expanded__content">
                     <h1 class="expanded__title">Color Choice</h1>
 
-                    <h3>Location-based reporting</h3>
+                    <h3>Core Color</h3>
                     <p>
-
+                        Skibo Red, one in the CMU's campus palette, has been chosen as the core color of this App.
                     </p>
+                    <h3>Secondary Colors</h3>
+                    <P>
+                        In order to help users better distinguish different facility/building types, several bright secondary colors were chosen to represent drinking fountains, vending machines, doors, walls, etc. These colors are used in small areas due to brightness.
+                    </P>
                 </div>
                 <div class="expanded__media">
-                    <img src="./images/Campus+/Sticker.png" width="70%">
+                    <img src="./images/Campus+/Color_Core.png" width="50%">
+                    <img src="./images/Campus+/Color_Secondary.png" width="50%" style="margin-top: 100px;">
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <div class="expanded landing__section">
         <div class="container">
             <div class="expanded__inner">
 
                 <div class="expanded__content">
-                    <h1 class="expanded__title">Stickers</h1>
+                    <h1 class="expanded__title">Scanning the Stickers</h1>
 
                     <h3>Location-based reporting</h3>
                     <p>
@@ -455,46 +504,6 @@
                 </div>
                 <div class="expanded__media">
                     <img src="./images/Campus+/Sticker.png" width="70%">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- <div class="expanded landing__section">
-        <div class="container">
-            <div class="expanded__inner">
-
-                <div class="expanded__content">
-                    <h1 class="expanded__title">Building Details</h1>
-
-
-                    <p>
-                        Students could easily see the direction, contact information and relevant notifications in the detail page of a building. It also lists all the facilities in this building for students to find.
-                    </p>
-                </div>
-                <div class="expanded__media">
-                    <img class="img" src="./images/Campus+/HiFi/HuntLib_MockUp.png" width="70%">
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <div class="expanded landing__section">
-        <div class="container">
-            <div class="expanded__inner">
-
-                <div class="expanded__content">
-                    <h1 class="expanded__title">Homepage</h1>
-
-                    <h3>Report an issue, track the process, and get notified.</h3>
-                    <p>
-                        Students can press the "+" button to start reporting issues. After reporting an issue, the issue will be added and tracked at homepage. Different facilities and buildings are differentiated by different colors.<b>It is designed that only after they report an issue can they track it. </b>They
-                        can also get notified when there're some other important updates.
-                    </p>
-                </div>
-                <div class="expanded__media">
-                    <img class="img" src="./images/Campus+/HiFi/Tracking_MockUp.png" width="70%">
                 </div>
             </div>
         </div>
@@ -541,7 +550,25 @@
         </div>
     </div>
 
+    <div class="expanded landing__section">
+        <div class="container">
+            <div class="expanded__inner">
 
+                <div class="expanded__content">
+                    <h1 class="expanded__title">Homepage</h1>
+
+                    <h3>Report an issue, track the process, and get notified.</h3>
+                    <p>
+                        Students can press the "+" button to start reporting issues. After reporting an issue, the issue will be added and tracked at homepage. Different facilities and buildings are differentiated by different colors.<b>It is designed that only after they report an issue can they track it. </b>They
+                        can also get notified when there're some other important updates.
+                    </p>
+                </div>
+                <div class="expanded__media">
+                    <img class="img" src="./images/Campus+/HiFi/Tracking_MockUp.png" width="70%">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="expanded landing__section">
         <div class="container">
@@ -609,7 +636,7 @@
                     <h3>Thinking from the users</h3>
                     <p>
                         I learned a lot during the user research and was quite surprised about why students don't have the motivation to report issues. It's difficult to educate students to volunteer to report issues, but here comes what I love most about design - we can make
-                        everything better by simplifying reporting process, giving rewards, and pushing a little bit: only allow them to track an issue after reporting it.
+                        everything better by simplifying the reporting process, giving them rewards, and by pushing a little bit: only allow them to track an issue after reporting it.
                     </p>
                     <h3>Less is more</h3>
                     <P>It's not always comfortable to simplify my design. Here's what I learned: it's not enough to find a way to solve the problem. It's better if you can find the easiest way to solve the problem.</P>
