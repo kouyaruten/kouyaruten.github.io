@@ -217,18 +217,28 @@
     <div class="expanded landing__section" style="background-color: #fff">
         <div class="container">
             <div class="expanded__inner">
-                <div class="expanded__content" style="width: 100%">
-                    <h1 class="middle_title" style="margin-top: 100px; font-size:60px;">
-                        <b style="color: #5654CD">Quenews</b><br> is a queue-based news app designed for <b style="color: #5654CD">commuters taking public transit.</b></h1>
+                <div class="expanded__content" style="width: 70%">
+                    <h1 style="margin-top: 100px; font-size: 50px;   color: #303030;  width: 110%">
+                        <b style="color: #5654CD">Quenews</b> is a queue-based news app designed for <b style="color: #5654CD">commuters taking public transit.</b></h1>
                     <p class="subtitle">Inspired by the pain points of commuters, my friend Erin and I designed Quenews together.<br> My role: Solution, Information Architecture, Work Flow, UI design, Prototyping.</P>
-                    <img src="images/Quenews/Logo.png" width="10%">
-
-
+                    <img src="images/Quenews/Logo.png" width="15%">
                 </div>
-
-
-
-
+                <div style="float: right; margin-top: 350px">
+                    <ul class="vMenu" style="font-weight: bold;">
+                        <li>
+                            <a onclick="myFunction(1)" style="cursor: pointer">Prototype</a>
+                        </li>
+                        <li>
+                            <a onclick="myFunction(2)" style="cursor: pointer">Problems</a>
+                        </li>
+                        <li>
+                            <a onclick="myFunction(3)" style="cursor: pointer">Solutions</a>
+                        </li>
+                        <li>
+                            <a onclick="myFunction(4)" style="cursor: pointer">Design</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -239,7 +249,7 @@
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor"  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
 		</span>
     </div>
-    <div class="expanded landing__section" style="background-color: #303030">
+    <div id="1" class="expanded landing__section" style="background-color: #303030">
         <div class="container">
             <div class="expanded__inner">
 
@@ -262,7 +272,7 @@
                     <h1 class="middle_title" style="">Context</h1>
 
                     <img src="images/Quenews/Context.png" style="width: 80%; margin-left: 10%; margin-top: 100px">
-                    <h1 class="middle_title" style="margin-top: 100px;">Users: <b style="color: #5654CD">Commuters</b> who enjoy <b style="color: #5654CD">listening to the news</b> when taking <b style="color: #5654CD">public transit.</b></h1>
+                    <h1 style="margin-top: 100px;">Users: <b style="color: #5654CD">Commuters</b> who enjoy <b style="color: #5654CD">listening to the news</b> when taking <b style="color: #5654CD">public transit.</b></h1>
                 </div>
             </div>
         </div>
@@ -277,7 +287,7 @@
         </div>
     </div> -->
 
-    <div class="expanded landing__section">
+    <div id="2" class="expanded landing__section">
         <div class="container">
             <div class="expanded__inner">
                 <div class="expanded__content" style="width: 40%">
@@ -302,7 +312,8 @@
         <div class="container">
             <div class="expanded__inner">
                 <div style="width: 100%">
-                    <h1 class="middle_title" style="margin-top: 100px;">Insight: <br>1. Commuters love listening to the news, since they want to do something <b style="color: #5654CD">MEANINGFUL</b> to avoid wasting their time.<br><br> 2. Commuters need better <b style="color: #5654CD">content, listening experience, and motivation</b>                        to listen to the news.</h1>
+                    <h1 class="middle_title" style="margin-top: 100px;">Insight</h1>
+                    <h1>1. Commuters love listening to the news, since they want to do something <b style="color: #5654CD">MEANINGFUL</b> to avoid wasting their time.<br><br> 2. Commuters need better <b style="color: #5654CD">content, listening experience, and motivation</b>                        to listen to the news.</h1>
                 </div>
             </div>
         </div>
@@ -323,7 +334,7 @@
         </div>
     </div>
 
-    <div class="expanded landing__section">
+    <div id="3" class="expanded landing__section">
         <div class="container">
             <div class="expanded__inner">
                 <div class="expanded__content" style="width: 50%">
@@ -345,7 +356,7 @@
         </div>
     </div>
 
-    <div class="expanded landing__section" style="background-color: #ffffff; ">
+    <div id="4" class="expanded landing__section" style="background-color: #ffffff; ">
         <div class="container">
             <div class="expanded__inner">
 
@@ -566,6 +577,13 @@
     <div class="window" id="window">
         <img src="" id="enlargeimg">
     </div>
+    <script>
+        function myFunction(n) {
+            var elmnt = document.getElementById(n);
+            elmnt.scrollIntoView();
+            window.scrollBy(0, -80);
+        }
+    </script>
     <script src='js/app.min.js'></script>
     <script>
         window.onload = function() {
