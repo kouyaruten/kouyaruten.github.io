@@ -226,7 +226,10 @@
                 <div style="float: right; margin-top: 350px">
                     <ul class="vMenu" style="font-weight: bold;">
                         <li>
-                            <a onclick="myFunction(1)" style="cursor: pointer">Prototype</a>
+                            <a onclick="myFunction(0)" style="cursor: pointer">Prototype</a>
+                        </li>
+                        <li>
+                            <a onclick="myFunction(1)" style="cursor: pointer">Research</a>
                         </li>
                         <li>
                             <a onclick="myFunction(2)" style="cursor: pointer">Problems</a>
@@ -249,7 +252,7 @@
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor"  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
 		</span>
     </div>
-    <div id="1" class="expanded landing__section" style="background-color: #303030">
+    <div id="0" class="expanded landing__section" style="background-color: #303030">
         <div class="container">
             <div class="expanded__inner">
 
@@ -265,55 +268,36 @@
         </div>
     </div>
 
-    <div class="expanded landing__section">
+    <div id="1" class="expanded landing__section">
         <div class="container">
             <div class="expanded__inner">
-                <div style="width: 100%">
+                <div class="expanded__content" style="width: 100%">
                     <h1 class="middle_title" style="">Context</h1>
 
                     <img src="images/Quenews/Context.png" style="width: 80%; margin-left: 10%; margin-top: 100px">
-                    <h1 style="margin-top: 100px;">Users: <b style="color: #5654CD">Commuters</b> who enjoy <b style="color: #5654CD">listening to the news</b> when taking <b style="color: #5654CD">public transit.</b></h1>
+                    <!-- <h1 style="margin-top: 100px;">Users: <b style="color: #5654CD">Commuters</b> who enjoy <b style="color: #5654CD">listening to the news</b> when taking <b style="color: #5654CD">public transit.</b></h1> -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- <div class="expanded landing__section">
+    <div class="expanded landing__section">
         <div class="container">
             <div class="expanded__inner">
-                <div style="width: 100%">
+                <div class="expanded__content" style="width: 100%">
                     <h1 class="middle_title" style="margin-top: 100px;">Users: <b style="color: #5654CD">Commuters</b> who enjoy <b style="color: #5654CD">listening to the news</b> when taking <b style="color: #5654CD">public transit.</b></h1>
                 </div>
             </div>
         </div>
-    </div> -->
-
-    <div id="2" class="expanded landing__section">
-        <div class="container">
-            <div class="expanded__inner">
-                <div class="expanded__content" style="width: 40%">
-                    <h1 class="middle_title" style="width: 200%">Existing Problems</h1>
-                    <p><i>"I don't wanna waste commuting time. Listening to news makes me feel like learning something."<br><br>
-            "I don't want to / it's not easy for me to take out my cell phone when commuting."<br><br>
-            "I wanna send emails or browse social media while listening to the news.
-            It's inconvenient to switch between the news app and other apps. "<br><br>
-        "There's no WiFi when commuting."<br><br>
-        "I wanted to know different media's perspectives about a piece of news."<br><br>
-            "I only listen to sports news."<br><br>
-        "I want to talk about today's news with my collegues."</i></p>
-                    <h3></h3>
-
-                </div>
-
-                <img class="img" src="images/Quenews/Insight.png" style="width: 60%; margin-left: 5%; margin-top: 0px">
-            </div>
-        </div>
     </div>
+
     <div class="expanded landing__section">
         <div class="container">
             <div class="expanded__inner">
-                <div style="width: 100%">
-                    <h1 class="middle_title" style="margin-top: 100px;">Insight</h1>
-                    <h1>1. Commuters love listening to the news, since they want to do something <b style="color: #5654CD">MEANINGFUL</b> to avoid wasting their time.<br><br> 2. Commuters need better <b style="color: #5654CD">content, listening experience, and motivation</b>                        to listen to the news.</h1>
+                <div class="expanded__content" style="width: 100%">
+                    <h1 class="middle_title">Interview</h1>
+                    <p>In order to better know the pain points of commuters when listening to the news, we interviewed 10 commuters in Pittsburgh and 10 in New York, since New York has a very advanced public transit system. Here are some interesting answers
+                        we found:</p>
+                    <img class="img" src="images/Quenews/Interview.png" style="width: 80%; margin-left: 10%; margin-top: 50px;">
                 </div>
             </div>
         </div>
@@ -325,8 +309,8 @@
                 <div class="expanded__content" style="width: 40%">
                     <h1 class="middle_title" style="width: 200%">User Journey: <br>Before</h1>
                     <h3>Janice: A student living in New York</h3>
-                    <p>Janice is a student in New York. Traveling 5 miles to school is her daily routine. She has to walk for a while, and then take the bus, and the subway. It takes her abour an hour to commute and she just doesn't want to waste two hours
-                        in her everyday life.</P>
+                    <p>We used journey map to further explore the pain points in the current journey. Janice is a student in New York. Traveling 5 miles to school is her daily routine. She has to walk for a while, and then take the bus, and the subway. It
+                        takes her abour an hour to commute and she just doesn't want to waste two hours in her everyday life.</P>
                 </div>
 
                 <img class="img" src="images/Quenews/JourneyMap-Before.jpg" style="width: 60%; margin-left: 5%; margin-top: 0px">
@@ -334,7 +318,36 @@
         </div>
     </div>
 
-    <div id="3" class="expanded landing__section">
+    <div id="2" class="expanded landing__section">
+        <div class="container">
+            <div class="expanded__inner">
+                <div class="expanded__content" style="width: 40%">
+                    <h1 class="middle_title" style="width: 200%">Existing Problems</h1>
+                    <p>We categorized and summarized the existing problems and pain points. Some are interaction problems related with the listening experience, some are preferences related with the content. There are also some other problems, such as no
+                        network signal and no motivation.</p>
+
+
+                </div>
+
+                <img class="img" src="images/Quenews/Insight.png" style="width: 60%; margin-left: 5%; margin-top: 0px">
+            </div>
+        </div>
+    </div>
+
+    <div class="expanded landing__section" style="background-color: #fff;">
+        <div class="container">
+            <div class="expanded__inner">
+                <div style="width: 100%">
+                    <h1 class="middle_title" style="margin-top: 100px;">Insight</h1>
+                    <h1>1. Commuters love listening to the news, since they want to do something <b style="color: #5654CD">MEANINGFUL</b> to avoid wasting their time.<br><br> 2. Commuters need better <b style="color: #5654CD">content, listening experience, and motivation</b>                        to listen to the news.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="3" class="expanded landing__section" style="background-color: #fafafa;">
         <div class="container">
             <div class="expanded__inner">
                 <div class="expanded__content" style="width: 50%">
@@ -464,21 +477,22 @@
             </div>
         </div>
     </div>
-    <div class="expanded landing__section" style="background-color: #f5f6f7">
+    <div class="expanded landing__section" style="">
         <div class="container">
             <div class="expanded__inner">
 
-                <div class="expanded__content">
+                <div class="expanded__content" style="width: 40%;">
                     <h1 class="expanded__title">Motivation</h1>
 
                     <h3>A reward system</h3>
                     <p>
-                        In order to encourage commuters to get knowledge from the news, we designed a reward system. They can get benefits (e.g. unlocking a new font, more high-quality content) with the more news they listen to.
+                        In order to encourage commuters to listen to more news, we designed a reward system. They can get benefits (e.g. unlocking a new font, more high-quality content) with the more news they listen to.
                     </p>
                     <P>Quenews will also send notifications before commuting time everyday to help commuters develop a good habit. </P>
                 </div>
-                <div class="expanded__media">
-                    <img src="./images/Quenews/Profile_Mockup.png" width="70%">
+                <div class="expanded__media" style="width: 60%;margin-left: 5%;">
+                    <img class="img" src="./images/Quenews/Profile_Mockup.png" width="53.5%">
+                    <img class="img" src="./images/Quenews/Notification.png" width="46.5%" style="float: right; margin-top: 15px;">
                 </div>
             </div>
         </div>
