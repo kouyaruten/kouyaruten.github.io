@@ -1,190 +1,243 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <meta class="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta class="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>William Jin | Design Everything</title>
     <!-- Don't forget to add your metadata here -->
-    <link rel='stylesheet' href='css/style.min.css' />
+    <link rel="stylesheet" href="css/style.min.css" />
     <style>
-        .alink {
-            /* text-decoration: underline; */
-            transition: .3s;
-            background-color: #cccccc;
-            border: #cccccc 6px solid;
-            border-radius: 10px;
-        }
-        
-        .alink:hover {}
-        
-        .alink:active {
-            background-color: #aaaaaa;
-            border: #aaaaaa 6px solid;
-            border-radius: 10px;
-        }
-        
-        .shadow {
-            transition: all .1s;
-        }
-        
-        .shadow:hover {
-            -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-            -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-        }
-        
-        .resume {
-            transition: all .1s;
-        }
-        
-        .resume:hover {
-            -webkit-box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
-            -moz-box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
-            box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
-        }
-        
-        .resume:active {
-            background-color: #362CCF;
-        }
-        
-        .overlay {
-            position: absolute;
-            width: auto;
-            background-color: rgba(255, 255, 255, .95);
-            opacity: 0;
-            -webkit-transition: .3s all;
-            -o-transition: .3s all;
-            transition: .3s all
-        }
-        
-        .overlay:hover {
-            opacity: 1;
-        }
-        
-        .step {
-            width: 33%;
-        }
-        /*.step:hover{
-            -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-            -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-            box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-        }*/
-        
-        .hero {
-            background-image: url(images/evie_default_bg.jpeg);
-        }
-        
-        .navbar__logo {
-            color: #303030;
-        }
-        
-        .navbar {
-            background-color: #fff;
-        }
-        
-        .navbar__menu {
-            -webkit-text-fill-color: #303030;
-        }
-        
-        .navbar__inner {
-            color: #303030
-        }
-        
-        .navbar__menu a {
-            color: #303030
-        }
-        
-        .navbar__menu a:after {
-            display: block;
-            content: "";
-            border-bottom: 2px solid #707070;
-            -webkit-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: -webkit-transform .25s ease-in-out;
-            transition: -webkit-transform .25s ease-in-out;
-            transition: transform .25s ease-in-out;
-            transition: transform .25s ease-in-out;
-            -webkit-transform .25s ease-in-out;
-        }
-        
-        .expanded__content {
-            width: 60%;
-        }
-        
-        .landing__section:nth-child(odd) {
-            background-color: #f5f6f7;
-            border-top: 0px solid #eee;
-            border-bottom: 0px solid #eee
-        }
-        
-        .landing__section {
-            background-color: #fafafa;
-        }
-        
-        .subtitle {
-            font-size: smaller;
-        }
-        
-        .expanded__text {
-            max-width: 500px;
-        }
-        
-        .expanded__title {
-            font-size: 50px;
-            font-weight: bold;
-            color: #303030;
-            letter-spacing: .5px;
-        }
-        
-        .landing_img {
-            transition: .3s ease-in-out;
-        }
-        
-        .landing_img:hover {
-            transform: scale(1.1);
-        }
+      .alink {
+          /* text-decoration: underline; */
+          transition: .3s;
+          background-color: #ddd;
+          border: #ddd .5rem solid;
+          border-radius: 1rem;
+      }
+
+      .alink:hover {
+        background-color: #ccc;
+          border: #ccc .5rem solid;
+      }
+
+      
+
+      .shadow {
+          transition: all .1s;
+      }
+
+      .shadow:hover {
+          -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+          -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+      }
+
+      .resume {
+          transition: all .1s;
+          padding: 1rem 3rem;
+          border-radius: 1rem;
+          margin-top: 1rem;
+          margin-bottom: 0;
+      }
+
+      .resume:hover {
+          -webkit-box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
+          -moz-box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
+          box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
+      }
+
+      .resume:active {
+          background-color: #362CCF;
+      }
+
+      .overlay {
+          position: absolute;
+          width: auto;
+          background-color: rgba(255, 255, 255, .95);
+          opacity: 0;
+          -webkit-transition: .3s all;
+          -o-transition: .3s all;
+          transition: .3s all
+      }
+
+      .overlay:hover {
+          opacity: 1;
+      }
+
+      .step {
+          width: 33%;
+      }
+      /*.step:hover{
+          -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+          -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+          box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
+      }*/
+
+      .hero {
+          background-image: url(images/evie_default_bg.jpeg);
+      }
+
+      .navbar__logo {
+          color: #303030;
+      }
+
+
+      .navbar {
+          background-color: #fff;
+      }
+
+      .navbar__menu {
+          -webkit-text-fill-color: #303030;
+      }
+
+      .navbar__inner {
+          color: #303030
+      }
+
+      .navbar__menu a {
+          color: #303030
+      }
+
+      .navbar__menu a:after {
+          display: block;
+          content: "";
+          border-bottom: 2px solid #707070;
+          -webkit-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: -webkit-transform .25s ease-in-out;
+          transition: -webkit-transform .25s ease-in-out;
+          transition: transform .25s ease-in-out;
+          transition: transform .25s ease-in-out;
+          -webkit-transform .25s ease-in-out;
+      }
+
+      .expanded__content {
+          width: 60%;
+      }
+
+      .landing__section:nth-child(odd) {
+          background-color: #f5f6f7;
+          border-top: 0px solid #eee;
+          border-bottom: 0px solid #eee
+      }
+
+      .landing__section {
+          background-color: #fafafa;
+      }
+
+      .subtitle {
+          font-size: smaller;
+      }
+
+      .expanded__text {
+          max-width: 500px;
+      }
+
+      .expanded__title {
+          font-size: 3.5rem;
+          font-weight: bold;
+          color: #303030;
+          letter-spacing: .5px;
+      }
+
+      .landing_img {
+          transition: .3s ease-in-out;
+      }
+
+      .landing_img:hover {
+          transform: scale(1.1);
+      }
+      .bio {
+          border-left: .5rem solid #6c63ff;
+          padding-left: 2rem;
+      }
     </style>
-</head>
+  </head>
 
-<body style="font-family: 'Roboto', sans-serif;">
-
+  <body style="font-family: 'Roboto', sans-serif;">
     <div class="navbar navbar--extended">
-        <nav class="nav__mobile"></nav>
-        <div class="container">
-            <div class="navbar__inner">
-                <a href="index.html" class="navbar__logo" style="color: #303030">William Jin</a>
-                <nav class="navbar__menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                    </ul>
-                </nav>
-                <div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
-            </div>
+      <nav class="nav__mobile"></nav>
+      <div class="container">
+        <div class="navbar__inner">
+          <a href="index.html" class="navbar__logo" style="color: #303030">William Jin</a>
+          <nav class="navbar__menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </nav>
+          <div class="navbar__menu-mob">
+            <a href="" id="toggle">
+              <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  fill="currentColor"
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  class=""
+                ></path>
+              </svg>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
     <div style="background-color: #6c63ff; height: 20px"></div>
     <div class="expanded landing__section" style="background-color: #f4f4f7">
-        <div class="container">
-            <div class="expanded__inner">
-                <div class="expanded__content">
-                    <P class="subtitle" style="margin-top: 100px">William Jin | Product Innovator</P>
-                    <h1 style="font-size: 50px;   color: #303030; letter-spacing: 0px">
-                        <b>Hi, I'm William.</b> I design (almost) everything.</h1>
-                    <p style="font-size: 20px; font-weight: lighter; line-height: 2.0;">I'm passionate about creating great products by combining ux, business and technology. You can view my <a href="CustomizedDesign.html" class="alink"><b>🏀Playground</b></a>, find me on <a href="https://www.linkedin.com/in/qiu-william-jin-405929168/"
-                            target="_blank" class="alink"><b>👔LinkedIn</b></a>, or just send me an <a target="_blank" href="mailto:qiuj@andrew.cmu.edu" class="alink"><b>📧Email</b></a>.</p>
-                    <a target="_blank" href="./pdfs/resume.pdf" class="resume button button__primary" style="letter-spacing: 1px">My Resume</a><br>
-                </div>
-            </div>
+      <div class="container">
+        <div class="expanded__inner">
+          <div class="expanded__content" style="width: 72%;">
+            <div class="bio">
+                <p class="subtitle" style="margin-top: 100px">William Jin | Product Innovator</p>
+                <h1 style="font-size: 3.5rem;   color: #303030; letter-spacing: 0px">
+                  <strong>Hi, I'm William.</strong>
+                  I design (almost) everything.
+                </h1>
+                <p style="font-size: 20px; font-weight: lighter; line-height: 2.0;">
+                  I'm passionate about creating great products by combining ux, business and technology. You can view my
+                  <a href="CustomizedDesign.html" class="alink"><b>⚽ Playground</b></a>
+                  , find me on
+                  <a href="https://www.linkedin.com/in/qiu-william-jin-405929168/" target="_blank" class="alink">
+                    <b>👔 LinkedIn</b>
+                  </a>
+                  , or just send me an
+                  <a target="_blank" href="mailto:qiuj@andrew.cmu.edu" class="alink"><b>📧 Email</b></a>
+                  .
+                </p>
+            
+            <a
+              target="_blank"
+              href="./pdfs/resume.pdf"
+              class="resume button button__primary"
+              style="letter-spacing: 1px"
+            >
+            📝 My Resume
+            </a>
         </div>
+            
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="hero__sub" style="margin-top: -50px">
-        <span id="scrollToNext">
-			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor"  viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
-		</span>
+      <span id="scrollToNext">
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          class="hero__sub__down"
+          fill="currentColor"
+          viewBox="0 0 512 512"
+          style="enable-background:new 0 0 512 512;"
+          xml:space="preserve"
+        >
+          <path
+            d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"
+          />
+        </svg>
+      </span>
     </div>
     <!-- Steps -->
 
@@ -203,41 +256,46 @@
 </div>
 -->
     <div class="expanded landing__section" style="background-color: #fafafa; ">
-        <div class="container">
-            <div class="expanded__inner">
+      <div class="container">
+        <div class="expanded__inner">
+          <div class="expanded__content bio">
+            <h1 class="expanded__title">Quenews</h1>
+            <p class="subtitle">Group Project (2 people), 2019</p>
+            <p class="expanded__text">A queue-based news app to make commuters' life more meaningful.</p>
+          </div>
 
-                <div class="expanded__content">
-                    <h1 class="expanded__title">Quenews</h1>
-                    <P class="subtitle">Group Project (2 people), 2019</P>
-                    <p class="expanded__text">A queue-based news app to make commuters' life more meaningful.
-                </div>
-                <div class="expanded__media">
-                    <a href="Quenews.html">
-                        <img class="landing_img" src="./images/Quenews/Queue_Mockup.png" width="60%">
-                    </a>
-                </div>
-            </div>
+          <div class="expanded__media">
+            <a href="Quenews.html">
+              <img class="landing_img" src="./images/Quenews/Queue_Mockup.png" width="70%" />
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="expanded landing__section" style="background-image: linear-gradient(to bottom right, #4796E1, #225DC0); ">
-        <div class="container">
+    <div
+      class="expanded landing__section"
+      style="background-image: linear-gradient(to bottom right, #4796E1, #225DC0); "
+    >
+      <div class="container">
+        <div class="expanded__inner">
+          <div class="expanded__content bio">
+            <h1 class="expanded__title" style="color: #ffffff;">IBM Product Design Intern</h1>
+            <p class="subtitle" style="color: rgba(255,255,255,.5);">Feb - Jun 2019</p>
+            <p class="expanded__text" style="color: #ffffff;">Several projects during my internship in IBM.</p>
+          </div>
 
-            <div class="expanded__inner">
-
-
-                <div class="expanded__content">
-                    <h1 class="expanded__title" style="color: #ffffff;">IBM Product Design Intern</h1>
-                    <P class="subtitle" style="color: rgba(255,255,255,.5);">Feb - Jun 2019</P>
-                    <p class="expanded__text" style="color: #ffffff;">Several projects during my internship in IBM.</div>
-                <div class="expanded__media">
-                    <a href="IBM2.html">
-                        <img class='landing_img' src="./images/IBM/0.png" width="80%" style="margin-top: 150px; margin-bottom: 150px">
-                    </a>
-                </div>
-
-            </div>
-
+          <div class="expanded__media">
+            <a href="IBM2.html">
+              <img
+                class="landing_img"
+                src="./images/IBM/0.png"
+                width="80%"
+                style="margin-top: 150px; margin-bottom: 150px"
+              />
+            </a>
+          </div>
         </div>
+      </div>
     </div>
     <!-- <div class="expanded landing__section">
         <div class="container">
@@ -255,38 +313,40 @@
             </div>
         </div>
     </div> -->
-    <div class="expanded landing__section" style="background-image: url('images/Pianooooo/0.jpg');
--webkit-background-size:cover ;">
-        <div class="container">
-            <div class="expanded__inner">
+    <div
+      class="expanded landing__section"
+      style="background-image: url('images/Pianooooo/0.jpg');
+-webkit-background-size:cover ;"
+    >
+      <div class="container">
+        <div class="expanded__inner">
+          <div class="expanded__content bio">
+            <h1 class="expanded__title">Pianooooo</h1>
+            <p class="subtitle">Independent Project, 2017</p>
+            <p class="expanded__text">A piano-sharing business model.</p>
+          </div>
 
-                <div class="expanded__content">
-                    <h1 class="expanded__title">Pianooooo</h1>
-                    <P class="subtitle">Independent Project, 2017</P>
-                    <p class="expanded__text">A piano-sharing business model.</div>
-                <div class="expanded__media">
-                    <a href="Pianooooo.html">
-                        <img class="landing_img" src="./images/Pianooooo/phone.png" width="60%" style="opacity: .9">
-                    </a>
-                </div>
-            </div>
+          <div class="expanded__media">
+            <a href="Pianooooo.html">
+              <img class="landing_img" src="./images/Pianooooo/phone.png" width="60%" style="opacity: .9" />
+            </a>
+          </div>
         </div>
+      </div>
     </div>
 
-
-
     <div class="footer footer--dark">
-        <div class="container">
-            <div class="footer__inner">
-                <a href="index.html" class="footer__textLogo">William Jin</a>
-                <div class="footer__data">
-                    <div class="footer__data__item">
-                        <div class="footer__row">
-                            Email: qiuj@andrew.cmu.edu</div>
-                        <div class="footer__row">
-                        </div>
-                    </div>
-                    <!--
+      <div class="container">
+        <div class="footer__inner">
+          <a href="index.html" class="footer__textLogo">William Jin</a>
+          <div class="footer__data">
+            <div class="footer__data__item">
+              <div class="footer__row">
+                Email: qiuj@andrew.cmu.edu
+              </div>
+              <div class="footer__row"></div>
+            </div>
+            <!--
                 <div class="footer__data__item">
                     <div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
                     </div>
@@ -305,11 +365,10 @@
                     <a href="./additional.html" class="footer__link">MIT license</a>
                 </div>
                 -->
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <script src='js/app.min.js'></script>
-</body>
-
+    <script src="js/app.min.js"></script>
+  </body>
 </html>

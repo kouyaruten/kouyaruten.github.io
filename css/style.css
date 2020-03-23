@@ -1395,3 +1395,15 @@ select {
         border-bottom: 1px solid #6C63FF;
         transform: none;
         transition: none; } }
+
+h1 span {
+  font-weight: 700;
+}
+
+h1{
+  font-size: rem;
+}
+
+.navbar-menu li a:hover{
+  background-color: #eee;
+}
