@@ -7,153 +7,8 @@
     <title>William Jin | Design Everything</title>
     <!-- Don't forget to add your metadata here -->
     <link rel="stylesheet" href="css/style.min.css" />
-    <style>
-      .alink {
-          /* text-decoration: underline; */
-          transition: .3s;
-          background-color: #ddd;
-          border: #ddd .5rem solid;
-          border-radius: 1rem;
-      }
-
-      .alink:hover {
-        background-color: #ccc;
-          border: #ccc .5rem solid;
-      }
-
-      
-
-      .shadow {
-          transition: all .1s;
-      }
-
-      .shadow:hover {
-          -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-          -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-      }
-
-      .resume {
-          transition: all .1s;
-          padding: 1rem 3rem;
-          border-radius: 1rem;
-          margin-top: 1rem;
-          margin-bottom: 0;
-      }
-
-      .resume:hover {
-          -webkit-box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
-          -moz-box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
-          box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
-      }
-
-      .resume:active {
-          background-color: #362CCF;
-      }
-
-      .overlay {
-          position: absolute;
-          width: auto;
-          background-color: rgba(255, 255, 255, .95);
-          opacity: 0;
-          -webkit-transition: .3s all;
-          -o-transition: .3s all;
-          transition: .3s all
-      }
-
-      .overlay:hover {
-          opacity: 1;
-      }
-
-      .step {
-          width: 33%;
-      }
-      /*.step:hover{
-          -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-          -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-          box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-      }*/
-
-      .hero {
-          background-image: url(images/evie_default_bg.jpeg);
-      }
-
-      .navbar__logo {
-          color: #303030;
-      }
-
-
-      .navbar {
-          background-color: #fff;
-      }
-
-      .navbar__menu {
-          -webkit-text-fill-color: #303030;
-      }
-
-      .navbar__inner {
-          color: #303030
-      }
-
-      .navbar__menu a {
-          color: #303030
-      }
-
-      .navbar__menu a:after {
-          display: block;
-          content: "";
-          border-bottom: 2px solid #707070;
-          -webkit-transform: scaleX(0);
-          -ms-transform: scaleX(0);
-          transform: scaleX(0);
-          -webkit-transition: -webkit-transform .25s ease-in-out;
-          transition: -webkit-transform .25s ease-in-out;
-          transition: transform .25s ease-in-out;
-          transition: transform .25s ease-in-out;
-          -webkit-transform .25s ease-in-out;
-      }
-
-      .expanded__content {
-          width: 60%;
-      }
-
-      .landing__section:nth-child(odd) {
-          background-color: #f5f6f7;
-          border-top: 0px solid #eee;
-          border-bottom: 0px solid #eee
-      }
-
-      .landing__section {
-          background-color: #fafafa;
-      }
-
-      .subtitle {
-          font-size: smaller;
-      }
-
-      .expanded__text {
-          max-width: 500px;
-      }
-
-      .expanded__title {
-          font-size: 3.5rem;
-          font-weight: bold;
-          color: #303030;
-          letter-spacing: .5px;
-      }
-
-      .landing_img {
-          transition: .3s ease-in-out;
-      }
-
-      .landing_img:hover {
-          transform: scale(1.1);
-      }
-      .bio {
-          border-left: .5rem solid #6c63ff;
-          padding-left: 2rem;
-      }
-    </style>
+    <link rel="stylesheet" href="css/myStyle.css" />
+   
   </head>
 
   <body style="font-family: 'Roboto', sans-serif;">
@@ -181,28 +36,29 @@
         </div>
       </div>
     </div>
-    <div style="background-color: #6c63ff; height: 20px"></div>
-    <div class="expanded landing__section" style="background-color: #f4f4f7">
+    <div class="expanded landing__section" style="background-color: #f4f4f7 height: 100vh;">
       <div class="container">
         <div class="expanded__inner">
-          <div class="expanded__content" style="width: 72%;">
+          <div class="expanded__content" style="width: 80%;">
             <div class="bio">
                 <p class="subtitle" style="margin-top: 100px">William Jin | Product Innovator</p>
                 <h1 style="font-size: 3.5rem;   color: #303030; letter-spacing: 0px">
-                  <strong>Hi, I'm William.</strong>
-                  I design (almost) everything.
+                  <strong>Hi, I'm William 👨‍💻</strong><br>
+                  <span style="font-size: smaller;">I design (almost) everything.</span>
                 </h1>
-                <p style="font-size: 20px; font-weight: lighter; line-height: 2.0;">
-                  I'm passionate about creating great products by combining ux, business and technology. You can view my
-                  <a href="CustomizedDesign.html" class="alink"><b>⚽ Playground</b></a>
-                  , find me on
-                  <a href="https://www.linkedin.com/in/qiu-william-jin-405929168/" target="_blank" class="alink">
-                    <b>👔 LinkedIn</b>
-                  </a>
-                  , or just send me an
-                  <a target="_blank" href="mailto:qiuj@andrew.cmu.edu" class="alink"><b>📧 Email</b></a>
-                  .
-                </p>
+                <div style="width: 80%;">
+                  <p style="font-size: 20px; font-weight: lighter; line-height: 2.5;">
+                    I'm passionate about creating great products by combining ux, business and technology. You can view my
+                    <a href="playground.html" class="alink"><b>⚽ Playground</b></a>
+                    , find me on
+                    <a href="https://www.linkedin.com/in/qiu-william-jin-405929168/" target="_blank" class="alink">
+                      <b>👔 LinkedIn</b>
+                    </a>
+                    , or just send me an
+                    <a target="_blank" href="mailto:qiuj@andrew.cmu.edu" class="alink"><b>📧 Email</b></a>
+                    .
+                  </p>
+                </div>
             
             <a
               target="_blank"
@@ -239,22 +95,24 @@
         </svg>
       </span>
     </div>
-    <!-- Steps -->
 
-    <!--<div class="expanded landing__section">
-    <div class="container">
+    <div class="expanded landing__section" style="background-color: #efeeee;">
+      <div class="container" style="margin-top: 100px;">
         <div class="expanded__inner">
-            <div class="expanded__media">
-                <img src="./images/undraw_browser.svg" class="expanded__image">
-            </div>
-            <div class="expanded__content">
-                <h2 class="expanded__title">Natural styling without a learning curve</h2>
-                <p class="expanded__text">Evie brings you the pages you'll need and the structure to create your own, with almost nothing to learn. It is minimal and mostly styles plain elements. There are only a few classes you'll need to know but nothing to disrupt your preferred coding style.</p>
-            </div>
+          <div class="expanded__content bio" style="width: 40%;">
+            <h1 class="expanded__title">Tiny</h1>
+            <p class="subtitle">Independent Project, 2020</p>
+            <p class="expanded__text">An intuitive, minimal, and beautiful To-do List App helping users organize and categorize their personal to-dos.</p>
+          </div>
+
+          <div class="expanded__media" style="width: 60%;">
+            <a href="tiny.html">
+              <img class="landing_img" src="./images/Tiny/title.png" width="100%" style="margin-left: 2rem;" />
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
--->
     <div class="expanded landing__section" style="background-color: #fafafa; ">
       <div class="container">
         <div class="expanded__inner">
@@ -297,22 +155,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="expanded landing__section">
-        <div class="container">
-            <div class="expanded__inner">
-
-                <div class="expanded__content">
-                    <h1 class="expanded__title">Campus+</h1>
-                    <P class="subtitle">Independent Project, 2020</P>
-                    <p class="expanded__text">A experience system helping students report and track facility and building issues.</div>
-                <div class="expanded__media">
-                    <a href="Campus+.html">
-                        <img class="landing_img" src="./images/Campus+/HiFi/Tracking_MockUp.png" width="60%">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div
       class="expanded landing__section"
       style="background-image: url('images/Pianooooo/0.jpg');
