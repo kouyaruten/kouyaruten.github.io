@@ -1146,7 +1146,7 @@ select {
 
 /*--- Modifiers---*/
 .footer--dark {
-  background-color: #333C44; }
+  background-color: teal; }
   .footer--dark .footer__textLogo {
     color: #fff; }
   .footer--dark .footer__inner {

@@ -8,191 +8,8 @@
     <title>William Jin | Design Everything</title>
     <!-- Don't forget to add your metadata here -->
     <link rel='stylesheet' href='css/style.min.css' />
-    <style>
-        .alink {
-            text-decoration: underline;
-            transition: .3s;
-        }
-        
-        .alink:hover {
-            background-color: rgba(108, 99, 255, 0.3);
-        }
-        
-        .alink:active {
-            background-color: rgba(108, 99, 255, 1);
-        }
-        
-        .shadow {
-            transition: all .1s;
-        }
-        
-        .shadow:hover {
-            -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-            -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-        }
-        
-        .resume {
-            transition: all .1s;
-        }
-        
-        .resume:hover {
-            -webkit-box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
-            -moz-box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
-            box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
-        }
-        
-        .resume:active {
-            background-color: #362CCF;
-        }
-        
-        .overlay {
-            position: absolute;
-            width: auto;
-            background-color: rgba(255, 255, 255, .95);
-            opacity: 0;
-            -webkit-transition: .3s all;
-            -o-transition: .3s all;
-            transition: .3s all
-        }
-        
-        .overlay:hover {
-            opacity: 1;
-        }
-        
-        .step {
-            width: 33%;
-        }
-        /*.step:hover{
-            -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-            -moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-            box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-        }*/
-        
-        .hero {
-            background-image: url(images/evie_default_bg.jpeg);
-        }
-        
-        .navbar__logo {
-            color: #303030;
-        }
-        
-        .navbar {
-            background-color: #fff;
-        }
-        
-        .navbar__menu {
-            -webkit-text-fill-color: #303030;
-        }
-        
-        .navbar__inner {
-            color: #303030
-        }
-        
-        .navbar__menu a {
-            color: #303030
-        }
-        
-        .navbar__menu a:after {
-            display: block;
-            content: "";
-            border-bottom: 2px solid #707070;
-            -webkit-transform: scaleX(0);
-            -ms-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: -webkit-transform .25s ease-in-out;
-            transition: -webkit-transform .25s ease-in-out;
-            transition: transform .25s ease-in-out;
-            transition: transform .25s ease-in-out;
-            -webkit-transform .25s ease-in-out;
-        }
-        
-        .expanded__content {
-            width: 60%;
-        }
-        
-        .landing__section:nth-child(odd) {
-            background-color: #f5f6f7;
-            border-top: 0px solid #eee;
-            border-bottom: 0px solid #eee
-        }
-        
-        .landing__section {
-            background-color: #fafafa;
-        }
-        
-        .subtitle {
-            font-size: smaller;
-        }
-        
-        .expanded__text {
-            max-width: 500px;
-        }
-        
-        .expanded__title {
-            font-size: 50px;
-            font-weight: bold;
-            color: #303030;
-            letter-spacing: .5px;
-            max-width: 500px;
-        }
-        
-        .landing_img {
-            transition: .3s ease-in-out;
-        }
-        
-        .landing_img:hover {
-            transform: scale(1.1);
-        }
-        
-        .landing_middle {
-            text-align: center;
-            background-color: #f5f6f7;
-            padding: 50px;
-            padding-top: 100px;
-        }
-        
-        .middle_title {
-            font-size: 50px;
-            font-weight: bold;
-            color: #303030;
-            letter-spacing: .5px;
-        }
-        
-        .larger_text {
-            font-size: 20px;
-        }
-        
-        .img {
-            cursor: zoom-in;
-        }
-        
-        .window {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            left: 50%;
-            top: 50%;
-            text-align: center;
-            visibility: hidden;
-            opacity: 0;
-            background-color: rgba(255, 255, 255, 0.95);
-            -webkit-transition: all 0.3s;
-            -webkit-transform: translateX(-50%) translateY(-50%) scale(0.6);
-        }
-        
-        .window img {
-            height: 88%;
-            margin-top: 5.5%;
-            align-content: center;
-        }
-        
-        .window-show {
-            visibility: visible;
-            opacity: 1;
-            -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
-        }
-    </style>
+    <link rel='stylesheet' href='css/myStyle.css' />
+   
 </head>
 
 <body style="font-family: 'Roboto', sans-serif;">
@@ -216,14 +33,16 @@
     <div style="background-color: #5654CD; height: 70px"></div>
     <div class="expanded landing__section" style="background-color: #fff">
         <div class="container">
-            <div class="expanded__inner">
-                <div class="expanded__content" style="width: 70%">
-                    <h1 style="margin-top: 100px; font-size: 50px;   color: #303030;  width: 110%">
-                        <b style="color: #5654CD">Quenews</b> is a queue-based news app designed for <b style="color: #5654CD">commuters taking public transit.</b></h1>
-                    <p class="subtitle">Inspired by the pain points of commuters, my friend Erin and I designed Quenews together.<br> My role: Solution, Information Architecture, Work Flow, UI design, Prototyping.</P>
+            <div class="expanded__inner" style="margin: 80px 0;">
+                <div class="expanded__content bio" style="width: 70%; border-left: .5rem solid #5654CD;">
+                    <h1 style="font-size: 3.5rem;   color: #303030;  width: 110%">
+                        <h1 class="expanded__title">Quenews</h1>
+                        <p class="subtitle">Group Project (2 people), 2019 <br><br>My role: Solution, Information Architecture, Work Flow, UI design, Prototyping.</p>
+                        
+                        <p>A queue-based news app designed for commuters taking public transit.</p>
                     <img src="images/Quenews/Logo.png" width="15%">
                 </div>
-                <div style="float: right; margin-top: 350px">
+                <div style="float: right; ">
                     <ul class="vMenu" style="font-weight: bold;">
                         <li>
                             <a onclick="myFunction(0)" style="cursor: pointer">Prototype</a>
@@ -256,14 +75,14 @@
         <div class="container">
             <div class="expanded__inner">
 
-                <div class="expanded__content" style="width: 40%">
+                <div class="expanded__content" style="width: 100%">
                     <h1 class="expanded__title" style="color: #8F8DE8">Prototype</h1>
-                </div>
-                <div class="expanded__media">
                     <div style="box-shadow: box-shadow: 0px 0px 20px #c0c0c0">
-                        <iframe width="889" height="500" style="margin-left: -50%" src="https://www.youtube.com/embed/Cj2JDOmxvvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="580" style=“" src="https://www.youtube.com/embed/Cj2JDOmxvvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
+                
+                
             </div>
         </div>
     </div>
@@ -309,7 +128,7 @@
                 <div class="expanded__content" style="width: 40%">
                     <h1 class="middle_title" style="width: 200%">User Journey: <br>Before</h1>
                     <h3>Janice: A student living in New York</h3>
-                    <p>We used journey map to further explore the pain points in the current journey. Janice is a student in New York. Traveling 5 miles to school is her daily routine. She has to walk for a while, and then take the bus, and the subway. It
+                    <d>We used journey map to further explore the pain points in the current journey. Janice is a student in New York. Traveling 5 miles to school is her daily routine. She has to walk for a while, and then take the bus, and the subway. It
                         takes her abour an hour to commute and she just doesn't want to waste two hours in her everyday life.</P>
                 </div>
 
@@ -377,7 +196,7 @@
                     <h1 class="expanded__title">Queue</h1>
 
                     <h3>A one-stop solution</h3>
-                    <p>Commuters can easily add a piece of news to their queue. In doing so, they don't have to frequently take out their cell phones or switch between apps, or to worry about WiFi. The only thing is to add several pieces of news to the queue,
+                    <d>Commuters can easily add a piece of news to their queue. In doing so, they don't have to frequently take out their cell phones or switch between apps, or to worry about WiFi. The only thing is to add several pieces of news to the queue,
                         and then enjoy the journey! Besides, they can see the total remaining time and plan accordingly basing on the commuting time.
                         <h3>Better content</h3>
                         <P>The recommendation algorithm is also based on the queue. Commuters can add a new piece of news to their queues according to their listening history. Also, if the current queue is finished, the system will automatically choose a
@@ -577,9 +396,11 @@
 
 
 
-    <div class="landing_middle" style="background-color: #f5f6f7">
-        <h1 class="middle_title">Wanna learn more about our design process?</h1>
-        <a href="QuenewsDetail.html" class="resume button button__primary" style="letter-spacing: 1px">Learn more</a><br>
+    <div class="expanded landing__section" style="background-color: #f5f6f7;">
+        <div class="container" style="text-align: center;">
+                <h1 class="expanded__title" style="max-width: 100%;">Wanna learn more about our design process?</h1>
+                <a href="QuenewsDetail.html" class="resume button button__primary" style="letter-spacing: 1px">Learn more</a>
+        </div>
 
 
     </div>
@@ -594,25 +415,7 @@
                         <div class="footer__row">
                         </div>
                     </div>
-                    <!--
-                <div class="footer__data__item">
-                    <div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
-                    </div>
-                </div>
-                <div class="footer__data__item">
-                <div class="footer__row">
-                    <a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
-                </div>
-                <div class="footer__row">
-                    <a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
-                </div>
-                <div class="footer__row">
-                    <a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
-                </div>
-                <div class="footer__row">
-                    <a href="./additional.html" class="footer__link">MIT license</a>
-                </div>
-                -->
+                  
                 </div>
             </div>
         </div>

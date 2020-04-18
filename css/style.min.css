@@ -1339,7 +1339,7 @@ select::-ms-expand {
 }
 
 .footer--dark {
-    background-color: #333c44
+    background-color: teal
 }
 
 .footer--dark .footer__textLogo {
