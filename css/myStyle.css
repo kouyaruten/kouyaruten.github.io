@@ -43,6 +43,8 @@
 
 .resume:active {
     background-color: teal;
+    transform: scale(0.9) translateY(-5px);
+
 }
 
 .overlay {
@@ -143,6 +145,10 @@
 .landing_img:hover {
     transform: translateY(-20px) scale(1.1);
     
+}
+.landing_img:active {
+    transform: translateY(-20px) scale(1.0);
+
 }
 .bio {
     border-left: .5rem solid teal;
