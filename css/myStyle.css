@@ -20,9 +20,10 @@
 }
 .resume {
     transition: all .25s;
-    padding: 1rem 2rem;
+    padding: .8rem 4rem;
     border-radius: 3rem;
     margin-top: 1rem;
+    font-weight: 700;
     margin-bottom: 0;
     border: none;
     background-color: teal;
