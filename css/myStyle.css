@@ -20,33 +20,40 @@
 }
 .resume {
     transition: all .25s;
-    padding: .8rem 4rem;
+    padding: 18px 45px;
+    font-family: Shanti;
     border-radius: 3rem;
     margin-top: 1rem;
     font-weight: 700;
     margin-bottom: 0;
     border: none;
-    background-color: teal;
+    background-color: #333c44;
 }
 .resume.button.button__primary.secondary {
     background-color: transparent !important;
+    border: 1px solid #333c44;
+    color: #333c44;
+    margin-left: 1rem;
+}
+.resume.button.button__primary.secondary:hover {
     border: 1px solid teal;
     color: teal;
 }
+
 
 .resume:hover {
     -webkit-box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
     -moz-box-shadow: 0px 10px 50px 1px rgba(108, 99, 255, 0.3);
     box-shadow: 0px 10px 50px 1px rgba(0, 128, 128, 0.1);
     transform: translateY(-5px);
-    background-color: rgb(22, 136, 136);
+    background-color: teal;
 }
-
+/* 
 .resume:active {
     background-color: teal;
     transform: scale(0.9) translateY(-5px);
 
-}
+} */
 
 .overlay {
     position: absolute;
@@ -147,12 +154,9 @@
     transform: translateY(-20px) scale(1.1);
     
 }
-.landing_img:active {
-    transform: translateY(-20px) scale(1.0);
 
-}
 .bio {
-    border-left: .5rem solid teal;
+    /* border-left: .5rem solid #333c44; */
     padding-left: 2rem;
 }
 .img {
