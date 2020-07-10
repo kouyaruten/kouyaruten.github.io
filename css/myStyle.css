@@ -136,7 +136,8 @@
 }
 
 .expanded__text {
-    max-width: 500px;
+    /* max-width: 500px; */
+    font-size: 1.2rem;
 }
 
 .expanded__title {
