@@ -3,7 +3,7 @@
     transition: .3s;
     background-color: #ddd;
     border: #ddd .5rem solid;
-    border-radius: 1rem;
+    border-radius: 5rem;
 }
 
 .alink:hover {
