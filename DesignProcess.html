@@ -1,153 +1,154 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head> <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"><meta class="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>William Jin | Design Everything</title>
-	<link rel='stylesheet' href='css/style.min.css' />
-	<style>
-		.shadow{
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta class="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>William Jin | Design Anything</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <style>
+      .shadow {
+        transition: all 0.3s;
+      }
+      .shadow:hover {
+        -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+      }
+      .overlay {
+        position: absolute;
 
-			transition: all .3s;
-		}
-		.shadow:hover{
-			-webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-			-moz-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-			box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
-		}
-		.overlay{
-			position: absolute;
+        width: auto;
 
-			width: auto;
+        background-color: rgba(255, 255, 255, 0.95);
+        opacity: 0;
+        -webkit-transition: 0.3s all;
+        -o-transition: 0.3s all;
+        transition: 0.3s all;
+      }
+      .overlay:hover {
+        opacity: 1;
+      }
+      .step {
+        width: 33%;
+      }
+      .hero {
+        background-image: url(images/evie_default_bg.jpeg);
+      }
+      .navbar__logo {
+        color: #303030;
+      }
+      .navbar {
+        background-color: #fff;
+      }
+      .navbar__menu {
+        -webkit-text-fill-color: #303030;
+      }
+      .navbar__inner {
+        color: #303030;
+      }
+      .navbar__menu a {
+        color: #303030;
+      }
+      .navbar__menu a:after {
+        display: block;
+        content: '';
+        border-bottom: 2px solid #707070;
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: -webkit-transform 0.25s ease-in-out;
+        transition: -webkit-transform 0.25s ease-in-out;
+        transition: transform 0.25s ease-in-out;
+        transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+      }
+      .expanded__content {
+        width: 60%;
+      }
 
+      .landing__section:nth-child(odd) {
+        background-color: #f5f6f7;
+        border-top: 0px solid #eee;
+        border-bottom: 0px solid #eee;
+      }
+      .landing__section {
+        background-color: #f5f6f7;
+      }
+    </style>
+  </head>
 
-			background-color: rgba(255, 255, 255, .95);
-			opacity: 0;
-			-webkit-transition: .3s all;
-			-o-transition: .3s all;
-			transition: .3s all
-		}
-		.overlay:hover{
-			opacity: 1;
-		}
-		.step{
-			width: 33%;
-		}
-		.hero{
-			background-image: url(images/evie_default_bg.jpeg);
-		}
-		.navbar__logo{
-			color: #303030;
+  <body style="font-family: 'Roboto', sans-serif; background-color: #f5f6f7;">
+    <!-- navbar -->
+    <div class="navbar">
+      <nav class="nav__mobile"></nav>
+      <div class="container">
+        <div class="navbar__inner">
+          <a href="index.html" class="navbar__logo">William</a>
+          <nav class="navbar__menu">
+            <ul>
+              <li><a href="#">Top</a></li>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+          </nav>
+          <div class="navbar__menu-mob">
+            <a href="" id="toggle">
+              <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  fill="currentColor"
+                  d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                  class=""
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div style="background-color: #6c63ff; height: 70px;"></div>
+    <div class="app">
+      <div class="container">
+        <div class="app__inner">
+          <div class="app__menu">
+            <ul class="vMenu" style="position: fixed;">
+              <li><a href="CustomizedDesign.html">Customized Design</a></li>
 
-		}
-		.navbar{
-			background-color: #fff;
-		}
-		.navbar__menu {
-			-webkit-text-fill-color: #303030;
+              <li><a href="Product%20Spec%20-%20Speaker%20Profile%20Page.html">Product Spec</a></li>
 
-
-		}
-		.navbar__inner{
-			color: #303030
-		}
-		.navbar__menu a {
-			color: #303030
-		}
-		.navbar__menu a:after {
-			display: block;
-			content: "";
-			border-bottom: 2px solid #707070;
-			-webkit-transform: scaleX(0);
-			-ms-transform: scaleX(0);
-			transform: scaleX(0);
-			-webkit-transition: -webkit-transform .25s ease-in-out;
-			transition: -webkit-transform .25s ease-in-out;
-			transition: transform .25s ease-in-out;
-			transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out
-		}
-		.expanded__content{
-			width: 60%;
-		}
-
-		.landing__section:nth-child(odd) {
-			background-color: #f5f6f7;
-			border-top: 0px solid #eee;
-			border-bottom: 0px solid #eee
-
-		}
-		.landing__section{
-			background-color: #f5f6f7;
-		}
-
-
-
-	</style>
-</head>
-
-<body style="font-family: 'Roboto', sans-serif;background-color: #f5f6f7">
-	<!-- navbar -->
-	<div class="navbar">
-		<nav class="nav__mobile"></nav>
-		<div class="container">
-			<div class="navbar__inner">
-				<a href="index.html" class="navbar__logo">William</a>
-				<nav class="navbar__menu">
-					<ul>
-						<li><a href="#">Top</a></li>
-						<li><a href="index.html">Home</a></li>
-
-					</ul>
-				</nav>
-				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
-			</div>
-		</div>
-	</div>
-	<!-- Page content -->
-	<div style="background-color: #6c63ff; height: 70px"></div>
-	<div class="app">
-		<div class="container">
-			<div class="app__inner">
-				<div class="app__menu">
-					<ul class="vMenu" style="position: fixed">
-						<li><a href="CustomizedDesign.html" >Customized Design</a></li>
-
-
-						<li><a href="Product%20Spec%20-%20Speaker%20Profile%20Page.html" >Product Spec</a></li>
-
-						<li><a href="DesignTrend.html" >Design Trends</a></li>
-						<li><a href="DesignThinking.html" >Design Thinking</a></li>
-						<li><a href="#" class="vMenu--active"  >Design Process</a></li>
-
-
-					</ul>
-				</div>
-				<div class="app__main">
-					<div class="text-container">
-						<h1 class="app__main__title">Design Process: Design Bridge</h1>
-						<P>Instead of the design methods, designers should focus on the logic of their design in a whole design process.
-							<b>Design Bridge</b> is a method ("created" by myself) to connect designers' research and their design. It's a better way to directly express the findings in the research and how these findings could shape the design.
-							As the name suggests, it's like a bridge, connecting the research and the design in a whole process.
-						</P>
-						<img src="./images/Design%20Bridge.jpg" width="90%" >
-
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer footer--dark">
-		<div class="container">
-			<div class="footer__inner">
-				<a href="index.html" class="footer__textLogo">William Jin</a>
-				<div class="footer__data">
-					<div class="footer__data__item">
-						<div class="footer__row">
-							Email: qiuj@andrew.cmu.edu</div>
-						<div class="footer__row">
-						</div>
-					</div>
-					<!--
+              <li><a href="DesignTrend.html">Design Trends</a></li>
+              <li><a href="DesignThinking.html">Design Thinking</a></li>
+              <li><a href="#" class="vMenu--active">Design Process</a></li>
+            </ul>
+          </div>
+          <div class="app__main">
+            <div class="text-container">
+              <h1 class="app__main__title">Design Process: Design Bridge</h1>
+              <p>
+                Instead of the design methods, designers should focus on the logic of their design in a whole design
+                process.
+                <b>Design Bridge</b>
+                is a method ("created" by myself) to connect designers' research and their design. It's a better way to
+                directly express the findings in the research and how these findings could shape the design. As the name
+                suggests, it's like a bridge, connecting the research and the design in a whole process.
+              </p>
+              <img src="./images/Design%20Bridge.jpg" width="90%" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer footer--dark">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="index.html" class="footer__textLogo">William Jin</a>
+          <div class="footer__data">
+            <div class="footer__data__item">
+              <div class="footer__row">
+                Email: qiuj@andrew.cmu.edu
+              </div>
+              <div class="footer__row"></div>
+            </div>
+            <!--
                     <div class="footer__data__item">
                         <div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
                         </div>
@@ -166,10 +167,10 @@
                         <a href="./additional.html" class="footer__link">MIT license</a>
                     </div>
                     -->
-				</div>
-			</div>
-		</div>
-	</div>
-<script src='js/app.min.js'></script>
-</body>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
 </html>

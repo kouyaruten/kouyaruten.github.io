@@ -29,6 +29,12 @@
     border: none;
     background-color: #333c44;
 }
+.hoverable {
+    transition: all .3s ease-in-out;
+}
+.hoverable:hover {
+    transform: translateY(-20px) scale(1.1);
+}
 .resume.button.button__primary.secondary {
     background-color: transparent !important;
     border: 1px solid #333c44;
